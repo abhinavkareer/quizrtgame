@@ -88,6 +88,11 @@ h1 , h2 , h3 , h4, h5 {
 	margin-top: 50px;
 	text-align: center;
 }
+#content
+{
+	margin-top: 100px;
+
+}
 
 .panel-1{
 	color: #1ca8dd;
@@ -103,4 +108,22 @@ h1 , h2 , h3 , h4, h5 {
 
 .panel-4{
 	color: #ECE472;
+}
+.hallOfFame
+{
+
+
+}
+.stack p
+{
+  color: white;
+}
+.stack
+{
+	margin-top: 10px;
+}
+.stack div
+{
+	border: 2px solid white;
+	
 }
