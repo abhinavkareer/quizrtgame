@@ -81,10 +81,11 @@ footer li a , footer li a:hover{
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
-h1 , h2 , h3 , h4, h5 {
-	color: #cfd2da;
+#tournments h1 , h2 , h3 , h4, h5 {
+	color: orange;
+	
 }
-#tournments{
+#myTournments , #created_tournaments{
 	margin-top: 50px;
 	text-align: center;
 }
@@ -104,3 +105,13 @@ h1 , h2 , h3 , h4, h5 {
 .panel-4{
 	color: #ECE472;
 }
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+ @media (max-width: 768px) {
+ 	.col-xs-2 {
+ 		width: 33.33333333%;
+ 	}
+ }
