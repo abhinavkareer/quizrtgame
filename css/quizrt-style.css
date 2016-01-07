@@ -111,26 +111,22 @@ footer li a , footer li a:hover{
 	color: #ECE472;
 }
 
-.hallOfFame
+#hallOfFame
 {
-
-
+	background-color: #e2e4e6;
 }
-.stack p
+.ico
 {
-  color: white;
+	    height: 30px;
 }
-.stack
+#heroElemHallOfFame
 {
-	margin-top: 10px;
+	background: url(./../images/banner1.jpeg) no-repeat;
+	background-position: center;
+
+	width: 100%;
+	height: 200px;
 }
-.stack div
-{
-	border: 2px solid white;
-
-}
-
-
 
 /* --------------------------------------
    Media Queries
