@@ -1,5 +1,5 @@
 body {
-  background-color: #666;
+  background-color: #293a46;
 }
 #content {
   padding-top: 300px;
@@ -13,21 +13,52 @@ body {
   text-align: center;
 }
 .row {
-  border: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
   padding: 0 10px;
 }
+.row h4 {
+  color: #ff9900;
+}
 .col-xs-2 {
-  border: 1px solid orange;
+  /*border: 1px solid orange;*/
   margin-bottom: 10px;
 }
 #teams-wrap .row {
   margin-bottom: 30px;
   padding-bottom: 5px;
 }
-
-.team:nth-child(2n+1) {
-  background: #555;
+.team {
+  background: #333;
+  text-align: center;
 }
-#teamRequests .col-xs-4 {
-  border: 1px solid red;
+.team:nth-child(2n+1) {
+  background: #666;
+}
+#teamRequestsAndInvitations .col-xs-6, #teamRequestsAndInvitations .col-xs-12 {
+  padding: 0;
+}
+#createRequest {
+  margin-top: 10px;
+}
+#createRequest button {
+  margin-left: 10%;
+  width: 80%;
+}
+
+
+
+/*.............................................................................
+                        Media Queries
+...............................................................................*/
+@media (max-width: 768px) {
+  .col-xs-2, .col-xs-4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .col-xs-2 {
+    width: 33.33333333%;
+  }
+  .col-xs-6 {
+    width: 100%;
+  }
 }
