@@ -9,7 +9,7 @@
     <meta name="description" content="Participate in tournaments around topics you are passionate about and easily discover new topics that match your interests">
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css"  href="css/bootstrap.min.css" >
-    <!-- ======== Stylesheet for app styling ============== -->
+    <!-- ======== Stylesheet for app styling ============== -->   
     <link rel="stylesheet" type="text/css"  href="css/quizrt-style.css"/>
   </head>
   <body>
@@ -38,15 +38,45 @@
                 </div><!-- end collapse -->
             </div>
          </nav><!-- end navbar -->
-         <div class="row" id="myTournaments">
+         <div class="row" id="tournamentHeading">
+            <h3>Tournaments <small>participate in tournaments around topics you are passionate about and easily discover new topics that match your interests</small></h3>
+         </div><!-- end tournamentHeading -->
+         <h4>Part of Tournaments</h4>
+         <div class="carousel slide" id="myCarousel" data-ride="carousel">
+            <!-- wrapper for slides -->
+            <div class="carousel-inner">
+              <script id="myTournamentsTemplate" type="myTournamentsTemplate">
+                  <div class="col-xs-2 tournament">
+                      <div class="panel-1">
+                          <img src="{{image}}" alt="{{name}}" width="64" height="64" class="img-circle">
+
+                          <p class="name">{{name}}</p>
+                          <span class="prize">{{prize}}</span><br>
+                          <span class="topic">{{topic}}</span>
+                      </div>
+                  </div><!-- end tournament -->
+              </script>
+              <div class="item active"></div>
+              
+            </div><!-- end carousel-inner -->
+            <!-- carousel controls -->
+            <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+              <span class="icon-prev"></span>
+            </a>
+            <a href="#myCarousel" class="right carousel-control" data-slide="next">
+              <span class="icon-next"></span>
+            </a>
+           
+         </div><!-- end myCarousel -->
+         <div class="row" id="myTournaments1">
             <h4>Part of Tournaments</h4>
-            <script id="myTournamentsTemplate" type="myTournamentsTemplate">
+            <script id="myTournamentsTemplate1" type="myTournamentsTemplate">
                 <div class="col-xs-2 tournament">
                     <div class="panel-1">
                         <img src="{{image}}" alt="{{name}}" width="64" height="64" class="img-circle">
 
                         <p class="name">{{name}}</p>
-                        <span class="prize">{{prize}}</span>
+                        <span class="prize">{{prize}}</span><br>
                         <span class="topic">{{topic}}</span>
                     </div>
                 </div><!-- end tournament -->
@@ -60,7 +90,7 @@
                         <img src="{{image}}" alt="{{name}}" width="64" height="64" class="img-circle">
 
                         <p class="name">{{name}}</p>
-                        <span class="prize">{{prize}}</span>
+                        <span class="prize">{{prize}}</span><br>
                         <span class="topic">{{topic}}</span>
                     </div>
                 </div><!-- end tournament -->
@@ -74,7 +104,7 @@
                         <img src="{{image}}" alt="{{name}}" width="64" height="64" class="img-circle">
 
                         <p class="name">{{name}}</p>
-                        <span class="prize">{{prize}}</span>
+                        <span class="prize">{{prize}}</span><br>
                         <span class="topic">{{topic}}</span>
                     </div>
                 </div><!-- end tournament -->
@@ -83,6 +113,6 @@
      </div>
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/tournaments-script.js"></script>
+    <script src="js/tournaments-script.js"></script> 
   </body>
 </html>

@@ -10,12 +10,19 @@
 								.replace(/{{image}}/ig , "images/" +item.image)
 								.replace(/{{prize}}/ig , "$" +item.prize)
 								.replace(/{{topic}}/ig , item.topic);
+
+			if(i<3){
+				$("div .item.active").append(fragment);
+				fragment ="";
+
+			}else if((i!= 0) && (i%3 == 0)){
+				var temp= $("<div class='item'></div>").append(fragment);
+				$("div .carousel-inner").append(temp);
+				
+				fragment = "";
+			}
 		});
 
-		
-
-		$("#myTournaments").append(fragment);
-		
 
 		template = $.trim($("#createdTournamentsTemplate").html());
 		fragment="";
@@ -26,7 +33,7 @@
 								.replace(/{{prize}}/ig , "$" +item.prize)
 								.replace(/{{topic}}/ig , item.topic);
 		});
-		console.log(fragment);
+
 
 		$("#created_tournaments").append(fragment);
 
