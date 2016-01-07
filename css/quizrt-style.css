@@ -57,7 +57,7 @@ footer li a , footer li a:hover{
 
 .nav>.active>a{
 	color: #fff;
-	background-color: #1ca8dd;
+	background-color: #32566f;
 	border-radius: 4px;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
@@ -81,20 +81,19 @@ footer li a , footer li a:hover{
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
-#tournments h1 , h2 , h3 , h4, h5 {
+#myTournaments h1 , h2 , h3 , h4, h5 {
 	color: orange;
 
 }
-#myTournments , #created_tournaments{
+#myTournaments , #created_tournaments , #tournaments_history{
 	margin-top: 50px;
 	text-align: center;
 }
-#content
-{
-	margin-top: 100px;
 
+.tournament{
+	padding: 5px;
+	margin-bottom: 5px;
 }
-
 .panel-1{
 	color: #1ca8dd;
 }
@@ -110,6 +109,7 @@ footer li a , footer li a:hover{
 .panel-4{
 	color: #ECE472;
 }
+
 
 #hallOfFame
 {
@@ -127,6 +127,7 @@ footer li a , footer li a:hover{
 	width: 100%;
 	height: 200px;
 }
+
 
 /* --------------------------------------
    Media Queries

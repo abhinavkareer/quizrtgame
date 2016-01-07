@@ -9,7 +9,7 @@
     <meta name="description" content="Participate in tournaments around topics you are passionate about and easily discover new topics that match your interests">
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css"  href="css/bootstrap.min.css" >
-    <!-- ======== Stylesheet for app styling ============== -->
+    <!-- ======== Stylesheet for app styling ============== -->   
     <link rel="stylesheet" type="text/css"  href="css/quizrt-style.css"/>
   </head>
   <body>
@@ -38,93 +38,51 @@
                 </div><!-- end collapse -->
             </div>
          </nav><!-- end navbar -->
-         <div class="row" id="myTournments">
+         <div class="row" id="myTournaments">
             <h4>Part of Tournaments</h4>
-            <div class="col-xs-2 tournament">
-                <div class=" panel-1">
-                    <img src="images/archery.png" alt="Archery" class="img-circle">
-                    <p class="name">Archery</p>
-                    <span class="prize">$12K</span>
-                </div>
-            </div><!-- end tournament -->
-            <div class="col-xs-2 tournament">
-                <div class=" panel-2">
-                    <img src="images/bloodelf.png" alt="Bloodelf" class="img-circle">
-                    <p>Bloodelf</p>
-                    <span class="prize">$15K</span>
-                </div>
-            </div><!-- end tournament -->
-            <div class="col-xs-2 tournament">
-                <div class="panel-3">
-                    <img src="images/slots.png" alt="Slots" class="img-circle">
-                    <p>Slots</p>
-                    <span class="prize">$4K</span>
-                </div>
-            </div><!-- end tournament -->
-            <div class="col-xs-2 tournament">
-                <div class="panel-2">
-                    <img src="images/tabard_nightelf.png" alt="Nightelf" class="img-circle">
-                    <p>Nightelf</p>
-                    <span class="prize">$11K</span>
-                </div>
-            </div><!-- end tournament -->
-            <div class="col-xs-2 tournament">
-                <div class="panel-3">
-                    <img src="images/wordstrom.png" alt="Wordstrom" class="img-circle">
-                    <p>Wordstrom</p>
-                    <span class="prize">$12K</span>
-                </div>
-            </div><!-- end tournament -->
-            <div class="col-xs-2 tournament">
-                <div class="panel-3">
-                    <img src="images/animals.png" alt="Roars" class="img-circle">
-                    <p>Roars</p>
-                    <span class="prize">$16K</span>
-                </div>
-            </div><!-- end tournament -->
+            <script id="myTournamentsTemplate" type="myTournamentsTemplate">
+                <div class="col-xs-2 tournament">
+                    <div class="panel-1">
+                        <img src="{{image}}" alt="{{name}}" width="64" height="64" class="img-circle">
+
+                        <p class="name">{{name}}</p>
+                        <span class="prize">{{prize}}</span>
+                        <span class="topic">{{topic}}</span>
+                    </div>
+                </div><!-- end tournament -->
+            </script>
          </div> <!-- end tournaments -->
          <div class="row" id="created_tournaments">
-            <h4>Created Tournments</h4>
-            <div class="col-xs-2 tournament">
-                <div class=" panel-1">
-                    <img src="images/movie_masters.png" alt="Movie Masters" class="img-circle">
-                    <p>Movie Masters</p>
-                </div>
-            </div><!-- end tournament -->
-            <div class="col-xs-2 tournament">
-                <div class=" panel-2">
-                    <img src="images/baskethalls.png" alt="Basket Halls" class="img-circle">
-                    <p>Basket Halls</p>
-                </div>
-            </div><!-- end tournament -->
-            <div class="col-xs-2 tournament">
-                <div class="panel-3">
-                    <img src="images/travel_trues.png" alt="Travel Trues" class="img-circle">
-                    <p>Travel Trues</p>
-                </div>
-            </div><!-- end tournament -->
-            <div class="col-xs-2 tournament">
-                <div class="panel-2">
-                    <img src="images/double_shots.png" alt="Double Shots" class="img-circle">
-                    <p>Double Shots</p>
-                </div>
-            </div><!-- end tournament -->
-            <div class="col-xs-2 tournament">
-                <div class="panel-3">
-                    <img src="images/dice.png" alt="Dices" class="img-circle">
-                    <p>Dices</p>
-                </div>
-            </div><!-- end tournament -->
-            <div class="col-xs-2 tournament">
-                <div class="panel-3">
-                    <img src="images/angry_frogs.png" alt="Angry Frogs" class="img-circle">
-                    <p>Angry Frogs</p>
-                </div>
-            </div><!-- end tournament -->
-         </div> <!-- end tournaments -->
+            <h4>Created Tournaments</h4>
+            <script id="createdTournamentsTemplate" type="createdTournamentsTemplate">
+                <div class="col-xs-2 tournament">
+                    <div class="panel-1">
+                        <img src="{{image}}" alt="{{name}}" width="64" height="64" class="img-circle">
+
+                        <p class="name">{{name}}</p>
+                        <span class="prize">{{prize}}</span>
+                        <span class="topic">{{topic}}</span>
+                    </div>
+                </div><!-- end tournament -->
+            </script>
+         </div> <!-- end created_tournaments -->
+         <div class="row" id="tournaments_history">
+            <h4>Tournaments History</h4>
+            <script id="tournamentsHistoryTemplate" type="tournamentsHistoryTemplate">
+                <div class="col-xs-2 tournament">
+                    <div class="panel-1">
+                        <img src="{{image}}" alt="{{name}}" width="64" height="64" class="img-circle">
+
+                        <p class="name">{{name}}</p>
+                        <span class="prize">{{prize}}</span>
+                        <span class="topic">{{topic}}</span>
+                    </div>
+                </div><!-- end tournament -->
+            </script>
+         </div> <!-- end created_tournaments -->
      </div>
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/tournaments-script.js"></script> 
   </body>
 </html>
