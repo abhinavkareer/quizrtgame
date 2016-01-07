@@ -81,18 +81,18 @@ footer li a , footer li a:hover{
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
-#myTournments h1 , h2 , h3 , h4, h5 {
+#myTournaments h1 , h2 , h3 , h4, h5 {
 	color: orange;
 	
 }
-#myTournments , #created_tournaments{
+#myTournaments , #created_tournaments , #tournaments_history{
 	margin-top: 50px;
 	text-align: center;
 }
 
 .tournament{
 	padding: 5px;
-	margin: 5px;
+	margin-bottom: 5px;
 }
 .panel-1{
 	color: #1ca8dd;

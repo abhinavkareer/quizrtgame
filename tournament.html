@@ -38,25 +38,47 @@
                 </div><!-- end collapse -->
             </div>
          </nav><!-- end navbar -->
-         <div class="row" id="myTournments">
+         <div class="row" id="myTournaments">
             <h4>Part of Tournaments</h4>
-           <script id="myTournmentsTemplate" type="myTournmentsTemplate">
+            <script id="myTournamentsTemplate" type="myTournamentsTemplate">
                 <div class="col-xs-2 tournament">
                     <div class="panel-1">
                         <img src="{{image}}" alt="{{name}}" width="64" height="64" class="img-circle">
+
                         <p class="name">{{name}}</p>
                         <span class="prize">{{prize}}</span>
                         <span class="topic">{{topic}}</span>
                     </div>
                 </div><!-- end tournament -->
             </script>
-            
          </div> <!-- end tournaments -->
          <div class="row" id="created_tournaments">
             <h4>Created Tournaments</h4>
+            <script id="createdTournamentsTemplate" type="createdTournamentsTemplate">
+                <div class="col-xs-2 tournament">
+                    <div class="panel-1">
+                        <img src="{{image}}" alt="{{name}}" width="64" height="64" class="img-circle">
+
+                        <p class="name">{{name}}</p>
+                        <span class="prize">{{prize}}</span>
+                        <span class="topic">{{topic}}</span>
+                    </div>
+                </div><!-- end tournament -->
+            </script>
          </div> <!-- end created_tournaments -->
          <div class="row" id="tournaments_history">
             <h4>Tournaments History</h4>
+            <script id="tournamentsHistoryTemplate" type="tournamentsHistoryTemplate">
+                <div class="col-xs-2 tournament">
+                    <div class="panel-1">
+                        <img src="{{image}}" alt="{{name}}" width="64" height="64" class="img-circle">
+
+                        <p class="name">{{name}}</p>
+                        <span class="prize">{{prize}}</span>
+                        <span class="topic">{{topic}}</span>
+                    </div>
+                </div><!-- end tournament -->
+            </script>
          </div> <!-- end created_tournaments -->
      </div>
     <script src="js/jquery-2.1.4.min.js"></script>
