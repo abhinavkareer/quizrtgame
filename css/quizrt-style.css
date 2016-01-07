@@ -3,7 +3,32 @@
    -------------------------------------- */
 body {
 	background-color: #293a46;
+}
 
+footer{
+   background-color: #1A1C22;
+   font-size: 14px;
+   padding: 20px;
+   margin-top: 20px;
+   color:#1ca8dd;
+}
+
+footer .company_name{
+   color:#003366;
+   font-weight: bold;
+   font-size: 48px;
+   margin: 0;
+   text-shadow : 1px 2px 2px #66ff33;
+}
+
+footer ul{
+   list-style: none;
+   margin-left: 0;
+   padding-left: 0;
+}
+
+footer li a , footer li a:hover{
+   color: #cfd2da;
 }
 
 
@@ -14,11 +39,14 @@ body {
 	padding: 0;
     margin-left:0px;
 }
+
+.navbar-fixed-top{
+   background-color: #1A1C22;
+}
 .navbar-header h2{
 	margin: 10px 0 0;
 	padding: 0 10px 0 0;
 	color: #fff;
-	
 }
 
 .nav li a{
@@ -53,14 +81,12 @@ body {
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
+h1 , h2 , h3 , h4, h5 {
+	color: #cfd2da;
+}
 #tournments{
 	margin-top: 50px;
 	text-align: center;
-}
-
-#tournments h3{
-	color: #fff;
-	text-align: left;
 }
 
 .panel-1{
