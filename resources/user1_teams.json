@@ -1,0 +1,97 @@
+{
+  "teamsPartOf" : [
+    {"teamName": "Fire Breathers",
+      "type": "Corporate",
+      "icon": "fire_breathers.png",
+      "topics": ["Mammal","Sports","Java"],
+      "members":["anilsawant","pratiksinha","abhinavkareer","sunilmekela"],
+      "played": 16,
+      "won": 10
+    },
+    {"teamName": "EC Strikers",
+      "type": "Locality",
+      "icon": "ec_strikers.png",
+      "topics": ["Bikes","Cars","Dogs"],
+      "members":["anilsawant",,"gopichandu","sunilmekela"],
+      "played": 5,
+      "won": 4
+    },
+    {"teamName": "Wipro Managers",
+      "type": "Corporate",
+      "icon": "wipro_managers.png",
+      "topics": ["People","Dates","Java"],
+      "members":["anilsawant","karthikeyan"],
+      "played": 12,
+      "won": 0
+    },
+    {"teamName": "StakRoute Marines",
+      "type": "Friends",
+      "icon": "stackroute_marines.png",
+      "topics": ["JavaScript","jQuery","Node"],
+      "members":["satishsukumar","mukund","nishant","sachingrover","anilsawant"],
+      "played": 20,
+      "won": 20
+    }],
+"teamsCreated" : [
+    {"teamName": "Fire Breathers",
+      "type": "Corporate",
+      "icon": "fire_breathers.png",
+      "topics": ["Mammal","Sports","Java"],
+      "members":["anilsawant","pratiksinha","abhinavkareer","sunilmekela"],
+      "played": 16,
+      "won": 10
+    },
+    {"teamName": "EC Strikers",
+      "type": "Locality",
+      "icon": "ec_strikers.png",
+      "topics": ["Bikes","Cars","Dogs"],
+      "members":["anilsawant",,"gopichandu","sunilmekela"],
+      "played": 5,
+      "won": 4
+    }],
+  "teamsOfInterest" : [
+    {"teamName": "Soccer Fanatics",
+      "type": "Friends",
+      "icon": "soccer_fanatics.png",
+      "topics": ["Soccer","Manchester United","Barcelona","AIFF"],
+      "members":["sunilchhetri","arnavmondal","jeje","gurpreet"],
+      "played": 10,
+      "won": 9
+    },
+    {"teamName": "Wipro Digital",
+      "type": "Corporate",
+      "icon": "wipro_digital.png",
+      "topics": ["JavaScript","jQuery"],
+      "members":["pranayghandhi","abhinavkareer","arulsrinivasan","nishant2"],
+      "played": 6,
+      "won": 2
+    }],
+  "requestsAndInvitations" : {
+    "requestsMade" : [
+      {"teamName": "Bearded Babas",
+        "type": "Friends",
+        "icon": "bearded_babas.png",
+        "topics": ["Beards","Hairstyles"],
+        "members":["pranayghandhi","abhinavkareer","arulsrinivasan","nishant2"],
+        "played": 16,
+        "won": 12
+      },
+      {"teamName": "Bearded Babas",
+        "type": "Friends",
+        "icon": "bearded_babas.png",
+        "topics": ["Beards","Hairstyles"],
+        "members":["pranayghandhi","abhinavkareer","arulsrinivasan","nishant2"],
+        "played": 16,
+        "won": 12
+      }],
+    "invitationsReceived" : [
+      {"teamName": "Charvi Sq",
+        "type": "Locality",
+        "icon": "charvi_square.png",
+        "topics": ["Cars","Bikes"],
+        "members":["pranayghandhi","abhinavkareer","arulsrinivasan","nishant2"],
+        "played": 16,
+        "won": 12
+      }
+    ]}
+}

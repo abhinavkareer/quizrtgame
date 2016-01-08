@@ -93,12 +93,12 @@ body {
   color: #000;
   cursor: pointer;
 }
-.team-thumbnail {
+.col-xs-4, .col-sm-4 {
   background: #333;
   margin-bottom: 10px;
   text-align: center;
 }
-.team-thumbnail:nth-child(2n+1) {
+.col-xs-4:nth-child(2n+1), .col-sm-4:nth-child(2n+1) {
   background: #666;
 }
 #teams-wrap .row {
@@ -163,13 +163,6 @@ body {
   }
   .row h4 {
     text-align: center;
-  }
-  .team-thumbnail{
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .team-thumbnail {
-    width: 33.33333333%;
   }
 
 }
