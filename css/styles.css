@@ -1,3 +1,21 @@
+/*
+Colours Used
+  Dark Navy Blue : #293a46
+  Orange: #ff9900
+  Parrot Green: #00e600
+  Shades of Grey: #f2f2f2, #fff, #ddd, #aaa, #666, #333, #000
+*/
+
+#addGroupPhoto a {
+  border: 1px solid #666;
+  border-radius: 80px;
+  display: block;
+  height: 64px;
+  padding: 10px 12px;
+  text-align: center;
+  text-decoration: none;
+  width: 64px;
+}
 body {
   background-color: #293a46;
 }
@@ -7,58 +25,151 @@ body {
 }
 #content, #teams-wrap {
   color: #f2f2f2;
-  padding-top: 60px;
+  margin-top: 60px;
+}
+#createGroup {
+  background-color: #f2f2f2;
+  box-shadow: 0 0 4px #fff;
+  color: #f2f2f2;
+  text-align: center;
+}
+#createGroup:hover {
+  background-color: #fff;
+  box-shadow: 0 0 12px #fff;
+  color: black;
+  cursor: pointer;
+}
+#createGroup:active {
+  box-shadow: inset 3px 3px 2px #777, inset -3px -3px 2px #777,0 0 4px #fff;
+  left: 2px;
+  position: relative;
+  top: 2px;
+}
+#createGroup a {
+  display: block;
+  outline: none;
+  text-decoration: none;
+}
+#createGroup h4 {
+  color: inherit;
+  display: inline-block;
+}
+#createGroupModal {
+  color: #666;
+}
+#createGroupModal .modal-header{
+  text-align: center;
+}
+#createGroupModal .modal-body h3,
+#createGroupModal .modal-body p {
+  text-align: center;
+}
+#createGroupModal .modal-body p {
+  color: #aaa;
+}
+#createGroupModal .modal-body h5 {
+  font-weight: bold;
+}
+.input-group-addon label {
+  margin-bottom: 0;
+}
+#makeRequest {
+  padding: 15px 0;
+  text-align: center;
+}
+#makeRequest .col-xs-3 {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  min-width: 160px;
+}
+#makeRequest label {
+  padding: 6px 0 1px;
+  width: 100%;
+}
+#makeRequest .input-group-addon{
+  color: #ff9900;
+}
+#makeRequest .input-group-addon:hover{
+  color: #000;
+  cursor: pointer;
+}
+.team-thumbnail {
+  background: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.team-thumbnail:nth-child(2n+1) {
+  background: #666;
+}
+#teams-wrap .row {
+  margin-bottom: 30px;
+  padding: 0;
+}
+#teams-wrap .row h4{
+  color: #ff9900;
 }
 #teams-wrap h1{
   text-align: center;
 }
-.row {
-  border-bottom: 1px solid #f2f2f2;
-  padding: 0 10px;
-}
-.row h4 {
-  color: #ff9900;
-}
-.col-xs-2 {
-  /*border: 1px solid orange;*/
-  margin-bottom: 10px;
-}
-#teams-wrap .row {
-  margin-bottom: 30px;
-  padding-bottom: 5px;
-}
-.team {
-  background: #333;
-  text-align: center;
-}
-.team:nth-child(2n+1) {
-  background: #666;
-}
-#teamRequestsAndInvitations .col-xs-6, #teamRequestsAndInvitations .col-xs-12 {
+#requests, #invitations {
   padding: 0;
 }
-#createRequest {
-  margin-top: 10px;
+
+
+/*.............................................................................
+                      Horizontal Dividers
+..............................................................................*/
+.divider {
+  border-top: 1px solid #666;
+  margin-left: auto;
+  margin-right: auto;
 }
-#createRequest button {
-  margin-left: 10%;
+.divider.len-10 {
+  width: 10%;
+}
+.divider.len-20 {
+  width: 20%;
+}
+.divider.len-30 {
+  width: 30%;
+}
+.divider.len-40 {
+  width: 40%;
+}
+.divider.len-50 {
+  width: 50%;
+}
+.divider.len-60 {
+  width: 60%;
+}
+.divider.len-70 {
+  width: 70%;
+}
+.divider.len-80 {
   width: 80%;
 }
-
-
-
+.divider.len-90 {
+  width: 90%;
+}
+.divider.len-100 {
+  width: 100%;
+}
 /*.............................................................................
                         Media Queries
 ...............................................................................*/
 @media (max-width: 768px) {
-  .col-xs-2, .col-xs-4 {
+  #makeRequest .input-group {
+    width: 100%;
+  }
+  .row h4 {
+    text-align: center;
+  }
+  .team-thumbnail{
     padding-left: 0;
     padding-right: 0;
   }
-  .col-xs-2 {
+  .team-thumbnail {
     width: 33.33333333%;
   }
-  .col-xs-6 {
-    width: 100%;
-  }
+
 }
