@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>QuizRT: Tournaments</title>
-  <meta name="description" content="Participate in tournaments around topics you are passionate about and easily discover new topics that match your interests">
+  <title>QuizRT: Hall Of Fame</title>
+  <meta name="description" content="Our Hall Of Fame Listing all the best performing users of our game">
   <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css"  href="css/bootstrap.min.css" >
   <!-- ======== Stylesheet for app styling ============== -->
@@ -17,23 +17,29 @@
 
 
 
-  <div class="col-xs-12 col-sm-4 col-md-3">
+  <div class="col-xs-6 col-sm-4 col-md-2 hofStack">
     <div class="panel panel-primary text-center">
       <div class="panel-heading">
-        <h3 class="panel-title ">{{name}}</h3>
+        <h3 class="panel-title "><span class="pull-left">{{name}}</span>  <span class="badge pull-right">{{rank}}</span><span class="clearfix"></span></h3>
       </div>
+
       <div class="panel-body">
         <img src="./images/{{img}}" class="img-responsive" alt="" >
-          </div>
+      </div>
+
         <div class="panel-footer text-primary">
         <div class="row">
-          <div class="col-xs-6"><span class="label label-warning">{{points}} Points</span> </div>
-          <div class="col-xs-6"><span class="label label-primary">{{games}} Played</span></div>
-          <div class="col-xs-6"><span class="label label-success">{{badge}} Badges</span></div>
-          <div class="col-xs-6"><span class="label label-success">{{win}}% Win Rate</span></div>
+
+          <div class="col-xs-6 label label-success" >{{points}} Points</div>
+          <div class="col-xs-6 label label-primary" >{{games}} Played</div>
+          <div class="col-xs-6 label label-warning">{{badge}} Badges</div>
+          <div class="col-xs-6 label label-success">{{win}}% Win</div>
+        
         </div>
+
       </div>
       <div class="panel-footer text-primary">{{cat}}</div>
+
     </div>
   </div>
 
@@ -45,6 +51,7 @@
 
 </head>
 <body>     <div class="container" id="main">
+
   <nav class="navbar navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -64,7 +71,7 @@
           </li>
           <li class="active"><a href="hallOfFame.html">People</a></li>
           <li><a href="teams.html">Teams</a></li>
-          <li><a href="tournaments.html">Tournaments</a></li>
+          <li><a href="tournament.html">Tournaments</a></li>
         </ul>
       </div><!-- end collapse -->
     </div>
@@ -97,7 +104,8 @@
                 .replace(/{{games}}/ig , item.games)
                 .replace(/{{badge}}/ig , item.badge)
                 .replace(/{{win}}/ig , item.win)
-                .replace(/{{cat}}/ig , item.cat);
+                .replace(/{{cat}}/ig , item.cat)
+                .replace(/{{rank}}/ig , i+1);
     });
 
 

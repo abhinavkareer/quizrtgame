@@ -1,41 +1,600 @@
-[{"name":"Anil Sawant",
-  "img":"pic1.jpg",
-  "points":3000,
-  "games":20,
-  "badge":5,
-  "win":98,
-  "cat":"Bolly, Music, Soccer"
-  },
-  {"name":"Anil Sawant",
-    "img":"pic1.jpg",
-    "points":3000,
-    "games":20,
-    "badge":5,
-    "win":98,
-    "cat":"Bolly, Music, Soccer"
-    }
-    ,
-    {   "name":"Anil Sawant",
-      "img":"pic1.jpg",
-      "points":3000,
-      "games":20,
-      "badge":5,
-      "win":98,
-      "cat":"Bolly, Music, Soccer"
-      },{
-        "name":"Anil Sawant",
-        "img":"pic1.jpg",
-        "points":3000,
-        "games":20,
-        "badge":5,
-        "win":98,
-        "cat":"Bolly, Music, Soccer"
-        },{
-          "name":"Anil Sawant",
-          "img":"pic1.jpg",
-          "points":3000,
-          "games":20,
-          "badge":5,
-          "win":98,
-          "cat":"Bolly, Music, Soccer"
-          }]
+[{
+		"name": "Vishal",
+		"img": "pic1.jpg",
+		"rank": 1,
+		"points": 3000,
+		"games": 20,
+		"badge": 5,
+		"win": 98,
+		"cat": "Bolly, Music, Soccer"
+
+	},
+
+	{
+		"name": "Anil",
+		"img": "pic2.jpg",
+		"rank": 2,
+		"points": 2000,
+		"games": 20,
+		"badge": 4,
+		"win": 85,
+		"cat": "Bolly, Music, Soccer"
+	},
+
+	{
+		"name": "Umesh",
+		"img": "pic3.jpg",
+		"rank": 3,
+		"points": 1500,
+		"games": 20,
+		"badge": 4,
+		"win": 70,
+		"cat": "Bolly, Music, Soccer"
+	},
+
+	{
+		"name": "Nishal",
+		"img": "pic4.jpg",
+		"rank": 4,
+		"points": 1000,
+		"games": 20,
+		"badge": 2,
+		"win": 68,
+		"cat": "Bolly, Music, Soccer"
+	},
+
+	{
+		"name": "Gppal",
+		"img": "pic2.jpg",
+		"rank": 5,
+		"points": 500,
+		"games": 20,
+		"badge": 1,
+		"win": 56,
+		"cat": "Bolly, Music, Soccer"
+	},
+
+	{
+		"name": "Umesh",
+		"img": "pic1.jpg",
+		"rank": 1,
+		"points": 3000,
+		"games": 20,
+		"badge": 5,
+		"win": 98,
+		"cat": "Bolly, Music, Soccer"
+
+	},
+
+	{
+		"name": "Sunil",
+		"img": "pic2.jpg",
+		"rank": 2,
+		"points": 2000,
+		"games": 20,
+		"badge": 4,
+		"win": 85,
+		"cat": "Bolly, Music, Soccer"
+	},
+
+	{
+		"name": "Vishal",
+		"img": "pic3.jpg",
+		"rank": 3,
+		"points": 1500,
+		"games": 20,
+		"badge": 4,
+		"win": 70,
+		"cat": "Bolly, Music, Soccer"
+	},
+
+	{
+		"name": "Pradeep",
+		"img": "pic4.jpg",
+		"rank": 4,
+		"points": 1000,
+		"games": 20,
+		"badge": 2,
+		"win": 68,
+		"cat": "Bolly, Music, Soccer"
+	},
+
+	{
+		"name": "Nishant",
+		"img": "pic2.jpg",
+		"rank": 5,
+		"points": 500,
+		"games": 20,
+		"badge": 1,
+		"win": 56,
+		"cat": "Bolly, Music, Soccer"
+	}, {
+		"name": "Ram",
+		"img": "pic2.jpg",
+		"rank": 1,
+		"points": 3000,
+		"games": 20,
+		"badge": 5,
+		"win": 98,
+		"cat": "Sports"
+
+	},
+
+	{
+		"name": "dhoni",
+		"img": "pic1.jpg",
+		"rank": 2,
+		"points": 2000,
+		"games": 20,
+		"badge": 4,
+		"win": 85,
+		"cat": "Sports"
+	},
+
+	{
+		"name": "Pankaj",
+		"img": "pic3.jpg",
+		"rank": 3,
+		"points": 1500,
+		"games": 20,
+		"badge": 4,
+		"win": 70,
+		"cat": "Sports"
+	},
+
+	{
+		"name": "Honey",
+		"img": "pic4.jpg",
+		"rank": 4,
+		"points": 1000,
+		"games": 20,
+		"badge": 2,
+		"win": 68,
+		"cat": "Sports"
+	},
+
+	{
+		"name": "Gopal",
+		"img": "pic1.jpg",
+		"rank": 5,
+		"points": 500,
+		"games": 20,
+		"badge": 1,
+		"win": 56,
+		"cat": "Sports"
+	},
+
+	{
+		"name": "lovley",
+		"img": "pic1.jpg",
+		"rank": 1,
+		"points": 3000,
+		"games": 20,
+		"badge": 5,
+		"win": 98,
+		"cat": "Bolly, Music, Soccer"
+
+	},
+
+	{
+		"name": "Johny",
+		"img": "pic2.jpg",
+		"rank": 2,
+		"points": 2000,
+		"games": 20,
+		"badge": 4,
+		"win": 85,
+		"cat": "Movies, General"
+	},
+
+	{
+		"name": "sonny",
+		"img": "pic3.jpg",
+		"rank": 3,
+		"points": 1500,
+		"games": 20,
+		"badge": 4,
+		"win": 70,
+		"cat": "Bolly, Music, Soccer"
+	},
+
+	{
+		"name": "Nihant",
+		"img": "pic4.jpg",
+		"rank": 4,
+		"points": 1000,
+		"games": 20,
+		"badge": 2,
+		"win": 68,
+		"cat": "Bolly, Music, Soccer"
+	},
+
+	{
+		"name": "Nishal",
+		"img": "pic2.jpg",
+		"rank": 5,
+		"points": 500,
+		"games": 20,
+		"badge": 1,
+		"win": 56,
+		"cat": "Bolly, Music, Soccer"
+	}, {
+		"name": "Pradeep",
+		"img": "pic1.jpg",
+		"rank": 1,
+		"points": 3000,
+		"games": 20,
+		"badge": 5,
+		"win": 98,
+		"cat": "Nature"
+
+	},
+
+	{
+		"name": "Vishal",
+		"img": "pic2.jpg",
+		"rank": 2,
+		"points": 2000,
+		"games": 20,
+		"badge": 4,
+		"win": 85,
+		"cat": "Nature"
+	},
+
+	{
+		"name": "Honey",
+		"img": "pic1.jpg",
+		"rank": 3,
+		"points": 1500,
+		"games": 20,
+		"badge": 4,
+		"win": 70,
+		"cat": "Nature"
+	},
+
+	{
+		"name": "Johney    ",
+		"img": "pic4.jpg",
+		"rank": 4,
+		"points": 1000,
+		"games": 20,
+		"badge": 2,
+		"win": 68,
+		"cat": "Nature"
+	},
+
+	{
+		"name": "Rahul",
+		"img": "pic3.jpg",
+		"rank": 5,
+		"points": 500,
+		"games": 20,
+		"badge": 1,
+		"win": 56,
+		"cat": "Nature"
+	}, {
+		"name": "Nishal",
+		"img": "pic4.jpg",
+		"rank": 1,
+		"points": 3000,
+		"games": 20,
+		"badge": 5,
+		"win": 98,
+		"cat": "Technical, Langauge, Sports, Nature"
+
+	},
+
+	{
+		"name": "Pankaj",
+		"img": "pic3.jpg",
+		"rank": 2,
+		"points": 2000,
+		"games": 20,
+		"badge": 4,
+		"win": 85,
+		"cat": "Technical, Langauge, Sports, Nature"
+	},
+
+	{
+		"name": "Honey",
+		"img": "pic2.jpg",
+		"rank": 3,
+		"points": 1500,
+		"games": 20,
+		"badge": 4,
+		"win": 70,
+		"cat": "Technical, Langauge, Sports, Nature"
+	},
+
+	{
+		"name": "Anil",
+		"img": "pic1.jpg",
+		"rank": 4,
+		"points": 1000,
+		"games": 20,
+		"badge": 2,
+		"win": 68,
+		"cat": "Technical, Langauge, Sports, Nature"
+	},
+
+	{
+		"name": "Vishal",
+		"img": "pic2.jpg",
+		"rank": 5,
+		"points": 500,
+		"games": 20,
+		"badge": 1,
+		"win": 56,
+		"cat": "Technical, Langauge, Sports, Nature"
+	}, {
+		"name": "Rupesh",
+		"img": "pic1.jpg",
+		"rank": 1,
+		"points": 3000,
+		"games": 20,
+		"badge": 5,
+		"win": 98,
+		"cat": "Nano Technology"
+
+	},
+
+	{
+		"name": "Lohant",
+		"img": "pic3.jpg",
+		"rank": 2,
+		"points": 2000,
+		"games": 20,
+		"badge": 4,
+		"win": 85,
+		"cat": "Nano Technology"
+	},
+
+	{
+		"name": "Vishal",
+		"img": "pic2.jpg",
+		"rank": 3,
+		"points": 1500,
+		"games": 20,
+		"badge": 4,
+		"win": 70,
+		"cat": "Nano Technology"
+	},
+
+	{
+		"name": "Honey",
+		"img": "pic1.jpg",
+		"rank": 4,
+		"points": 1000,
+		"games": 20,
+		"badge": 2,
+		"win": 68,
+		"cat": "Nano Technology"
+	},
+
+	{
+		"name": "Ravi",
+		"img": "pic2.jpg",
+		"rank": 5,
+		"points": 500,
+		"games": 20,
+		"badge": 1,
+		"win": 56,
+		"cat": "Nano Technology"
+	}, {
+		"name": "Nagarjuna",
+		"img": "pic1.jpg",
+		"rank": 1,
+		"points": 3000,
+		"games": 20,
+		"badge": 5,
+		"win": 98,
+		"cat": "Cricket, Hockey"
+
+	},
+
+	{
+		"name": "Ram",
+		"img": "pic2.jpg",
+		"rank": 2,
+		"points": 2000,
+		"games": 20,
+		"badge": 4,
+		"win": 85,
+		"cat": "Cricket, Hockey"
+	},
+
+	{
+		"name": "Ravi",
+		"img": "pic4.jpg",
+		"rank": 3,
+		"points": 1500,
+		"games": 20,
+		"badge": 4,
+		"win": 70,
+		"cat": "Cricket, Hockey"
+	},
+
+	{
+		"name": "Vishal",
+		"img": "pic1.jpg",
+		"rank": 4,
+		"points": 1000,
+		"games": 20,
+		"badge": 2,
+		"win": 68,
+		"cat": "Cricket, Hockey"
+	},
+
+	{
+		"name": "Umesh",
+		"img": "pic2.jpg",
+		"rank": 5,
+		"points": 500,
+		"games": 20,
+		"badge": 1,
+		"win": 56,
+		"cat": "Cricket, Hockey"
+	}, {
+		"name": "Nihant",
+		"img": "pic2.jpg",
+		"rank": 1,
+		"points": 3000,
+		"games": 20,
+		"badge": 5,
+		"win": 98,
+		"cat": "Health and Wealth"
+
+	},
+
+	{
+		"name": "Vishal",
+		"img": "pic1.jpg",
+		"rank": 2,
+		"points": 2000,
+		"games": 20,
+		"badge": 4,
+		"win": 85,
+		"cat": "Health and Wealth"
+	},
+
+	{
+		"name": "Vinod",
+		"img": "pic3.jpg",
+		"rank": 3,
+		"points": 1500,
+		"games": 20,
+		"badge": 4,
+		"win": 70,
+		"cat": "Health and Wealth"
+	},
+
+	{
+		"name": "Abudalla",
+		"img": "pic2.jpg",
+		"rank": 4,
+		"points": 1000,
+		"games": 20,
+		"badge": 2,
+		"win": 68,
+		"cat": "Health and Wealth"
+	},
+
+	{
+		"name": "Rajani",
+		"img": "pic4.jpg",
+		"rank": 5,
+		"points": 500,
+		"games": 20,
+		"badge": 1,
+		"win": 56,
+		"cat": "Health and Wealth"
+	}, {
+		"name": "Ropesh",
+		"img": "pic1.jpg",
+		"rank": 1,
+		"points": 3000,
+		"games": 20,
+		"badge": 5,
+		"win": 98,
+		"cat": "Hollywood, Bollywoood ,Kollywoord, Tollywood"
+
+	},
+
+	{
+		"name": "Vishal",
+		"img": "pic2.jpg",
+		"rank": 2,
+		"points": 2000,
+		"games": 20,
+		"badge": 4,
+		"win": 85,
+		"cat": "Hollywood, Bollywoood ,Kollywoord, Tollywood"
+	},
+
+	{
+		"name": "Akbar",
+		"img": "pic4.jpg",
+		"rank": 3,
+		"points": 1500,
+		"games": 20,
+		"badge": 4,
+		"win": 70,
+		"cat": "Hollywood, Bollywoood ,Kollywoord, Tollywood"
+	},
+
+	{
+		"name": "Vishal",
+		"img": "pic1.jpg",
+		"rank": 4,
+		"points": 1000,
+		"games": 20,
+		"badge": 2,
+		"win": 68,
+		"cat": "Hollywood, Bollywoood ,Kollywoord, Tollywood"
+	},
+
+	{
+		"name": "Rajesh",
+		"img": "pic2.jpg",
+		"rank": 5,
+		"points": 500,
+		"games": 20,
+		"badge": 1,
+		"win": 56,
+		"cat": "Hollywood, Bollywoood ,Kollywoord, Tollywood"
+	}, {
+		"name": "Vishal",
+		"img": "pic1.jpg",
+		"rank": 1,
+		"points": 3000,
+		"games": 20,
+		"badge": 5,
+		"win": 98,
+		"cat": "Hindi, Telugu, Tamil, English"
+
+	},
+
+	{
+		"name": "Umar",
+		"img": "pic2.jpg",
+		"rank": 2,
+		"points": 2000,
+		"games": 20,
+		"badge": 4,
+		"win": 85,
+		"cat": "Hindi, Telugu, Tamil, English"
+	},
+
+	{
+		"name": "Akbar",
+		"img": "pic1.jpg",
+		"rank": 3,
+		"points": 1500,
+		"games": 20,
+		"badge": 4,
+		"win": 70,
+		"cat": "Hindi, Telugu, Tamil, English"
+	},
+
+	{
+		"name": "Umesh",
+		"img": "pic3.jpg",
+		"rank": 4,
+		"points": 1000,
+		"games": 20,
+		"badge": 2,
+		"win": 68,
+		"cat": "Hindi, Telugu, Tamil, English"
+	},
+
+	{
+		"name": "Yadav",
+		"img": "pic2.jpg",
+		"rank": 5,
+		"points": 500,
+		"games": 20,
+		"badge": 1,
+		"win": 56,
+		"cat": "Hindi, Telugu, Tamil, English"
+	}
+]

@@ -5,3 +5,26 @@
 {
   margin-top: 100px;
 }
+.panel-body
+{
+  padding: 0;
+}
+.img-responsive
+{
+  display: inline;
+}
+
+.hofStack .label
+{
+  border-radius: 0;
+}
+.hofStack .panel-footer {
+    padding: 0 15px;
+}
+.hofStack
+{
+  max-height: 288px;
+      overflow: hidden;
+      margin-bottom: 2px;
+      padding: 1px;
+}
