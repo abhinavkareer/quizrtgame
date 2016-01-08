@@ -1,12 +1,4 @@
-/*
-Colours Used
-  Dark Navy Blue : #293a46
-  Orange: #ff9900
-  Parrot Green: #00e600
-  Shades of Grey: #f2f2f2, #fff, #ddd, #aaa, #666, #333, #000
-*/
-
-#addGroupPhoto a {
+#addTeamPhoto a {
   border: 1px solid #666;
   border-radius: 80px;
   display: block;
@@ -27,47 +19,47 @@ body {
   color: #f2f2f2;
   margin-top: 60px;
 }
-#createGroup {
+#createTeam {
   background-color: #f2f2f2;
   box-shadow: 0 0 4px #fff;
   color: #f2f2f2;
   text-align: center;
 }
-#createGroup:hover {
+#createTeam:hover {
   background-color: #fff;
   box-shadow: 0 0 12px #fff;
   color: black;
   cursor: pointer;
 }
-#createGroup:active {
+#createTeam:active {
   box-shadow: inset 3px 3px 2px #777, inset -3px -3px 2px #777,0 0 4px #fff;
   left: 2px;
   position: relative;
   top: 2px;
 }
-#createGroup a {
+#createTeam a {
   display: block;
   outline: none;
   text-decoration: none;
 }
-#createGroup h4 {
+#createTeam h4 {
   color: inherit;
   display: inline-block;
 }
-#createGroupModal {
+#createTeamModal {
   color: #666;
 }
-#createGroupModal .modal-header{
+#createTeamModal .modal-header{
   text-align: center;
 }
-#createGroupModal .modal-body h3,
-#createGroupModal .modal-body p {
+#createTeamModal .modal-body h3,
+#createTeamModal .modal-body p {
   text-align: center;
 }
-#createGroupModal .modal-body p {
+#createTeamModal .modal-body p {
   color: #aaa;
 }
-#createGroupModal .modal-body h5 {
+#createTeamModal .modal-body h5 {
   font-weight: bold;
 }
 .input-group-addon label {
@@ -93,13 +85,18 @@ body {
   color: #000;
   cursor: pointer;
 }
-.col-xs-4, .col-sm-4 {
-  background: #333;
-  margin-bottom: 10px;
+.tile {
+  background: #666;
+  margin: 2px -12px; /* to remove 15px padding and add 4px space b/w tiles */
   text-align: center;
 }
-.col-xs-4:nth-child(2n+1), .col-sm-4:nth-child(2n+1) {
-  background: #666;
+.tile:hover {
+  cursor: pointer;
+  margin: 2px -14px;
+  transform: translate(-2px,-2px);
+}
+.tile p {
+  margin-bottom: 0;
 }
 #teams-wrap .row {
   margin-bottom: 30px;
@@ -112,7 +109,7 @@ body {
   text-align: center;
 }
 #requests, #invitations {
-  padding: 0;
+  margin: 0;
 }
 
 

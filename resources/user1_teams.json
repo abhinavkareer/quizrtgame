@@ -1,6 +1,6 @@
 {
   "teamsPartOf" : [
-    {"teamName": "Fire Breathers",
+    {"teamName": "Fire Breathers Breathers",
       "type": "Corporate",
       "icon": "fire_breathers.png",
       "topics": ["Mammal","Sports","Java"],
@@ -12,7 +12,7 @@
       "type": "Locality",
       "icon": "ec_strikers.png",
       "topics": ["Bikes","Cars","Dogs"],
-      "members":["anilsawant",,"gopichandu","sunilmekela"],
+      "members":["anilsawant","gopichandu","sunilmekela"],
       "played": 5,
       "won": 4
     },
@@ -45,7 +45,7 @@
       "type": "Locality",
       "icon": "ec_strikers.png",
       "topics": ["Bikes","Cars","Dogs"],
-      "members":["anilsawant",,"gopichandu","sunilmekela"],
+      "members":["anilsawant","gopichandu","sunilmekela"],
       "played": 5,
       "won": 4
     }],
@@ -66,32 +66,30 @@
       "played": 6,
       "won": 2
     }],
-  "requestsAndInvitations" : {
-    "requestsMade" : [
-      {"teamName": "Bearded Babas",
-        "type": "Friends",
-        "icon": "bearded_babas.png",
-        "topics": ["Beards","Hairstyles"],
-        "members":["pranayghandhi","abhinavkareer","arulsrinivasan","nishant2"],
-        "played": 16,
-        "won": 12
-      },
-      {"teamName": "Bearded Babas",
-        "type": "Friends",
-        "icon": "bearded_babas.png",
-        "topics": ["Beards","Hairstyles"],
-        "members":["pranayghandhi","abhinavkareer","arulsrinivasan","nishant2"],
-        "played": 16,
-        "won": 12
-      }],
-    "invitationsReceived" : [
-      {"teamName": "Charvi Sq",
-        "type": "Locality",
-        "icon": "charvi_square.png",
-        "topics": ["Cars","Bikes"],
-        "members":["pranayghandhi","abhinavkareer","arulsrinivasan","nishant2"],
-        "played": 16,
-        "won": 12
-      }
-    ]}
+  "requestsMade" : [
+    {"teamName": "Bearded Babas",
+      "type": "Friends",
+      "icon": "bearded_babas.png",
+      "topics": ["Beards","Hairstyles"],
+      "members":["pranayghandhi","abhinavkareer","arulsrinivasan","nishant2"],
+      "played": 16,
+      "won": 12
+    },
+    {"teamName": "Bearded Babas",
+      "type": "Friends",
+      "icon": "bearded_babas.png",
+      "topics": ["Beards","Hairstyles"],
+      "members":["pranayghandhi","abhinavkareer","arulsrinivasan","nishant2"],
+      "played": 16,
+      "won": 12
+    }],
+  "invitationsReceived" : [
+    {"teamName": "Charvi Sq",
+      "type": "Locality",
+      "icon": "charvi_square.png",
+      "topics": ["Cars","Bikes"],
+      "members":["pranayghandhi","abhinavkareer","arulsrinivasan","nishant2"],
+      "played": 16,
+      "won": 12
+    }]
 }
