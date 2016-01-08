@@ -41,11 +41,13 @@
          <div class="row" id="tournamentHeading">
             <h3>Tournaments <small>participate in tournaments around topics you are passionate about and easily discover new topics that match your interests</small></h3>
          </div><!-- end tournamentHeading -->
-         <h4>Part of Tournaments</h4>
-         <div class="carousel slide" id="myCarousel" data-ride="carousel">
+         <div class="tournament-heading">
+           <h3>Part of Tournaments</h3>
+         </div>
+         <div class="carousel slide" id="partofTournammentCarousel" data-ride="carousel">
             <!-- wrapper for slides -->
             <div class="carousel-inner">
-              <script id="myTournamentsTemplate" type="myTournamentsTemplate">
+              <script id="tournamentTemplate" type="tournamentTemplate">
                   <div class="col-xs-4 col-sm-3 tournament">
 
                           <img src="{{image}}" alt="{{name}}" class="img-responsive">
@@ -54,63 +56,53 @@
                             <span class="prize">{{prize}}</span><br>
                             <span class="topic">{{topic}}</span>
                           </div>
-
                   </div><!-- end tournament -->
               </script>
               <div class="item active"></div>
 
             </div><!-- end carousel-inner -->
             <!-- carousel controls -->
-            <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+            <a href="#partofTournammentCarousel" class="left carousel-control" data-slide="prev">
               <span class="icon-prev"></span>
             </a>
-            <a href="#myCarousel" class="right carousel-control" data-slide="next">
+            <a href="#partofTournammentCarousel" class="right carousel-control" data-slide="next">
               <span class="icon-next"></span>
             </a>
 
          </div><!-- end myCarousel -->
-         <div class="row" id="myTournaments1">
-            <h4>Part of Tournaments</h4>
-            <script id="myTournamentsTemplate1" type="myTournamentsTemplate">
-                <div class="col-xs-2 tournament">
-                    <div class="panel-1">
-                        <img src="{{image}}" alt="{{name}}" width="64" height="64" class="img-responsive">
-
-                        <p class="name">{{name}}</p>
-                        <span class="prize">{{prize}}</span><br>
-                        <span class="topic">{{topic}}</span>
-                    </div>
-                </div><!-- end tournament -->
-            </script>
-         </div> <!-- end tournaments -->
-         <div class="row" id="created_tournaments">
-            <h4>Created Tournaments</h4>
-            <script id="createdTournamentsTemplate" type="createdTournamentsTemplate">
-                <div class="col-xs-2 tournament">
-                    <div class="panel-1">
-                        <img src="{{image}}" alt="{{name}}" width="64" height="64" class="img-responsive">
-
-                        <p class="name">{{name}}</p>
-                        <span class="prize">{{prize}}</span><br>
-                        <span class="topic">{{topic}}</span>
-                    </div>
-                </div><!-- end tournament -->
-            </script>
+         <div class="tournament-heading">
+           <h3>Created Tournaments</h3>
+         </div>
+         <div class="carousel slide" id="createdTournammentsCarousel" data-ride="carousel">
+            <!-- wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active"></div>
+            </div><!-- end carousel-inner -->
+            <!-- carousel controls -->
+            <a href="#createdTournammentsCarousel" class="left carousel-control" data-slide="prev">
+              <span class="icon-prev"></span>
+            </a>
+            <a href="#createdTournammentsCarousel" class="right carousel-control" data-slide="next">
+              <span class="icon-next"></span>
+            </a>
          </div> <!-- end created_tournaments -->
-         <div class="row" id="tournaments_history">
-            <h4>Tournaments History</h4>
-            <script id="tournamentsHistoryTemplate" type="tournamentsHistoryTemplate">
-                <div class="col-xs-2 tournament">
-                    <div class="panel-1">
-                        <img src="{{image}}" alt="{{name}}" width="64" height="64" class="img-circle">
+         <div class="tournament-heading">
+           <h3>Tournaments History</h3>
+         </div>
+         <div class="carousel slide" id="playedTournammentsCarousel" data-ride="carousel">
+            <!-- wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active"></div>
+            </div><!-- end carousel-inner -->
+            <!-- carousel controls -->
+            <a href="#playedTournammentsCarousel" class="left carousel-control" data-slide="prev">
+              <span class="icon-prev"></span>
+            </a>
+            <a href="#playedTournammentsCarousel" class="right carousel-control" data-slide="next">
+              <span class="icon-next"></span>
+            </a>
 
-                        <p class="name">{{name}}</p>
-                        <span class="prize">{{prize}}</span><br>
-                        <span class="topic">{{topic}}</span>
-                    </div>
-                </div><!-- end tournament -->
-            </script>
-         </div> <!-- end created_tournaments -->
+         </div> <!-- end playedTournammentsCarousel -->
      </div>
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
