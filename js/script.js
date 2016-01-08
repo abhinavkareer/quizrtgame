@@ -2,7 +2,10 @@
 	var tile_colors = ['#2672EC' , '#5133AB' , '#AC193D' , '#D24726' , '#008A00' , '#00A3A3'];
 	$.getJSON('resources/user1_teams.json').done( function(data) {
     var rows = Object.keys(data),
-        len = rows.length;
+        len = rows.length,
+				noData = $('<p>').css('color','red')
+												 .css('font-style', 'italic')
+												 .html('No Data Found');
 
     for (var i = 0; i < len; i++) {
       var rowTemplate = $( ('#' + rows[i]) );
@@ -10,14 +13,18 @@
         var teamsInRow = data[ rows[i] ],
             noOfTeams = teamsInRow.length,
             rowTemplateHtml = $.trim(rowTemplate.html());
+				if ( noOfTeams > 0 ) {
+					for (var j = 0; j < noOfTeams; j++) {
+	          var teamTile = rowTemplateHtml;
+	          teamTile = teamTile.replace(/{{image}}/ig, 'images/team-icons/' + teamsInRow[j].icon ) //'images/team-icons/team_default_64x64.png'
+	                             .replace(/{{name}}/ig, teamsInRow[j].teamName );
 
-        for (var j = 0; j < noOfTeams; j++) {
-          var teamTile = rowTemplateHtml;
-          teamTile = teamTile.replace(/{{image}}/ig, 'images/team-icons/' + teamsInRow[j].icon ) //'images/team-icons/team_default_64x64.png'
-                             .replace(/{{name}}/ig, teamsInRow[j].teamName );
+	          rowTemplate.closest('.row').append( teamTile );
+	        }
+				}else {
+					rowTemplate.closest('.row').append( noData );
+				}
 
-          rowTemplate.closest('.row').append( teamTile );
-        }
       }
     }
   });

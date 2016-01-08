@@ -67,14 +67,7 @@
       "won": 2
     }],
   "requestsMade" : [
-    {"teamName": "Bearded Babas",
-      "type": "Friends",
-      "icon": "devils.png",
-      "topics": ["Beards","Hairstyles"],
-      "members":["pranayghandhi","abhinavkareer","arulsrinivasan","nishant2"],
-      "played": 16,
-      "won": 12
-    }],
+    ],
   "invitationsReceived" : [
     {"teamName": "Charvi Sq",
       "type": "Locality",
