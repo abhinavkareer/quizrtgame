@@ -96,13 +96,15 @@ footer li a , footer li a:hover{
     padding:5px;
 }
 
-
-
 .tournament {
 	color: #fff;
 	text-align: center;
-	
-	
+}
+
+.tournament-heading {
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
 }
 
 .tile-0{
@@ -121,14 +123,20 @@ footer li a , footer li a:hover{
 	background-color: #D24726;
 }
 
-#myCarousel .item{
+#partofTournammentCarousel .item,
+#createdTournammentsCarousel .item,
+#playedTournammentsCarousel .item
+{
    height: 220px;
    width: 100%;
    margin: auto;
    padding: 10px 20px;
 }
 
-#myCarousel .carousel-control {
+#partofTournammentCarousel .carousel-control,
+#createdTournammentsCarousel .carousel-control,
+#playedTournammentsCarousel .carousel-control
+{
 	width: 5%;
 	font-size: 25px;
 }
