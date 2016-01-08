@@ -27,7 +27,7 @@
         <img src="./images/{{img}}" class="img-responsive" alt="" >
       </div>
 
-        <div class="panel-footer text-primary">
+        <div class="panel-footer">
         <div class="row">
 
           <div class="col-xs-6 label label-success" >{{points}} Points</div>
@@ -98,7 +98,7 @@
 
 
     $.each( data, function( i, item ) {
-      if(i<50)
+      if(i<15)
       fragment += template.replace(/{{name}}/ig , item.name)
                 .replace(/{{img}}/ig , item.img)
                 .replace(/{{points}}/ig ,  item.points)

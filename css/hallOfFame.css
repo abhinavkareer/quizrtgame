@@ -23,7 +23,7 @@
 }
 .hofStack
 {
-      max-height: 231px;
+    
       overflow: hidden;
       margin-bottom: 2px;
       padding: 1px;
@@ -39,22 +39,14 @@
    }
    /* Medium desktop */
    @media (max-width: 992) {
-     .hofStack {
 
-     max-height: 233px;
-       }
    }
 
    /* Landscape phone to portrait tablet */
    @media (max-width: 768px) {
-     .hofStack {
 
-     max-height: 259px;
-       }
    }
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
-  .hofStack {
-        max-height: 231px;
-  }
+
 }
