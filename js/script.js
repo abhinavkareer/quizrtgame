@@ -13,7 +13,7 @@
 
         for (var j = 0; j < noOfTeams; j++) {
           var teamTile = rowTemplateHtml;
-          teamTile = teamTile.replace(/{{image}}/ig, 'images/team-icons/team_default_64x64.png' )
+          teamTile = teamTile.replace(/{{image}}/ig, 'images/team-icons/' + teamsInRow[j].icon ) //'images/team-icons/team_default_64x64.png'
                              .replace(/{{name}}/ig, teamsInRow[j].teamName );
 
           rowTemplate.closest('.row').append( teamTile );

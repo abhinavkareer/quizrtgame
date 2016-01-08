@@ -92,10 +92,13 @@ body {
 }
 .tile:hover {
   cursor: pointer;
-  margin: 2px -14px;
-  transform: translate(-2px,-2px);
+  transform: translate(-3px,-3px);
+}
+.tile:active {
+  transform: translate(0,0);
 }
 .tile p {
+  text-overflow: clip;
   margin-bottom: 0;
 }
 #teams-wrap .row {
