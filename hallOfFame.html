@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>QuizRT: Tournaments</title>
+  <meta name="description" content="Participate in tournaments around topics you are passionate about and easily discover new topics that match your interests">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css"  href="css/bootstrap.min.css" >
+  <!-- ======== Stylesheet for app styling ============== -->
+  <link rel="stylesheet" type="text/css"  href="css/quizrt-style.css"/>
+  <link rel="stylesheet" type="text/css"  href="css/hallOfFame.css"/>
+
+  <script id="stackTemplate" type="tuts/template">
+
+
+
+  <div class="col-xs-12 col-sm-4 col-md-3">
+    <div class="panel panel-primary text-center">
+      <div class="panel-heading">
+        <h3 class="panel-title ">{{name}}</h3>
+      </div>
+      <div class="panel-body">
+        <img src="./images/{{img}}" class="img-responsive" alt="" >
+          </div>
+        <div class="panel-footer text-primary">
+        <div class="row">
+          <div class="col-xs-6"><span class="label label-warning">{{points}} Points</span> </div>
+          <div class="col-xs-6"><span class="label label-primary">{{games}} Played</span></div>
+          <div class="col-xs-6"><span class="label label-success">{{badge}} Badges</span></div>
+          <div class="col-xs-6"><span class="label label-success">{{win}}% Win Rate</span></div>
+        </div>
+      </div>
+      <div class="panel-footer text-primary">{{cat}}</div>
+    </div>
+  </div>
+
+
+
+
+
+  </script>
+
+</head>
+<body>     <div class="container" id="main">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-target="#navbar-collapse-1" data-toggle="collapse" type="button" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <h2>Quiz RT</h2>
+      </div><!-- end navbar-header -->
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#">
+              Home<span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="active"><a href="hallOfFame.html">People</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="tournaments.html">Tournaments</a></li>
+        </ul>
+      </div><!-- end collapse -->
+    </div>
+  </nav><!-- end navbar -->
+  <div class="row" id="content">
+
+  </div>
+<!-- content ends here -->
+</div>
+<!-- main ends here -->
+</div>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+<script>
+(function(){
+
+  var jsonDataFile = "resources/hallOfFame.json",
+  template = $.trim($("#stackTemplate").html()),
+          fragment="";
+  $.getJSON('resources/hallOfFame.json',function(data){
+
+
+
+    $.each( data, function( i, item ) {
+      fragment += template.replace(/{{name}}/ig , item.name)
+                .replace(/{{img}}/ig , item.img)
+                .replace(/{{points}}/ig ,  item.points)
+                .replace(/{{games}}/ig , item.games)
+                .replace(/{{badge}}/ig , item.badge)
+                .replace(/{{win}}/ig , item.win)
+                .replace(/{{cat}}/ig , item.cat);
+    });
+
+
+
+    $("#content").append(fragment);
+
+
+		});
+
+
+})();</script>
+
+
+</body>
+</html>

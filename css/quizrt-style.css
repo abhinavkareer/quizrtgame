@@ -57,7 +57,7 @@ footer li a , footer li a:hover{
 
 .nav>.active>a{
 	color: #fff;
-	background-color: #1ca8dd;
+	background-color: #32566f;
 	border-radius: 4px;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
@@ -81,16 +81,28 @@ footer li a , footer li a:hover{
 /* --------------------------------------
    Global Styles
    -------------------------------------- */
-h1 , h2 , h3 , h4, h5 {
+#tournamentHeading {
+	margin-top : 70px;
 	color: #cfd2da;
 }
-#tournments{
-	margin-top: 50px;
-	text-align: center;
+
+#myTournaments h1 , h2 , h3 , h4, h5 {
+	color: orange;
+
 }
 
+.tournament{
+	padding: 5px;
+	margin-bottom: 5px;
+}
 .panel-1{
-	color: #1ca8dd;
+	color: #fff;
+	border: 1px solid #5FD9B0;
+	border-radius: 2px;
+	padding: 5px 0;
+	margin: 5px 0;
+	text-align: center;
+	margin-top: 25px;
 }
 
 .panel-2{
@@ -104,3 +116,40 @@ h1 , h2 , h3 , h4, h5 {
 .panel-4{
 	color: #ECE472;
 }
+
+
+#hallOfFame
+{
+	background-color: #e2e4e6;
+}
+.ico
+{
+	    height: 30px;
+}
+#heroElemHallOfFame
+{
+	background: url(./../images/banner1.jpeg) no-repeat;
+	background-position: center;
+
+	width: 100%;
+	height: 200px;
+}
+
+#myCarousel .item{
+   height: 200px;
+   width: 100%;
+   margin: auto;
+}
+
+#myCarousel .carousel-control {
+	width: 5%;
+	font-size: 25px;
+}
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+ @media (max-width: 768px) {
+ 	.tournament {
+ 		width: 33.33333333%;
+ 	}
+ }

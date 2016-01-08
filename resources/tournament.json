@@ -1,0 +1,172 @@
+{
+  "tournaments": {
+    "created": [
+      {
+        "name": "Archery",
+        "image": "archery.png",
+        "topic": "Sports",
+        "prize": "12K"
+      },
+      {
+        "name": "Blood Elf",
+        "image": "bloodelf.png",
+        "topic": "Arcade",
+        "prize": "15K"
+      },
+      {
+        "name": "Slots",
+        "image": "slots.png",
+        "topic": "Casino",
+        "prize": "4K"
+      },
+      {
+        "name": "Night Elf",
+        "image": "tabard_nightelf.png",
+        "topic": "Arcade",
+        "prize": "11K"
+      },
+      {
+        "name": "WordStorm",
+        "image": "wordstrom.png",
+        "topic": "Puzzle",
+        "prize": "12K"
+      },
+      {
+        "name": "Roars",
+        "image": "animals.png",
+        "topic": "Strategy",
+        "prize": "16K"
+      },
+      {
+        "name": "Movie Masters",
+        "image": "movie_masters.png",
+        "topic": "Puzzle",
+        "prize": "9K"
+      },
+      {
+        "name": "Basket Halls",
+        "image": "baskethalls.png",
+        "topic": "Sports",
+        "prize": "10K"
+      }
+    ],
+    "playing": [
+      {
+        "name": "Travel Trues",
+        "image": "travel_trues.png",
+        "topic": "Strategy",
+        "prize": "14K"
+      },
+      {
+        "name": "Double Shots",
+        "image": "double_shots.png",
+        "topic": "Sports",
+        "prize": "12K"
+      },
+      {
+        "name": "Angry Frogs",
+        "image": "angry_frogs.png",
+        "topic": "Arcade",
+        "prize": "11K"
+      },
+      {
+        "name": "Dices",
+        "image": "dice.png",
+        "topic": "Casino",
+        "prize": "6K"
+      },
+      {
+        "name": "Academic Bowl",
+        "image": "academic_bowl.png",
+        "topic": "Learning",
+        "prize": "3K"
+      },
+      {
+        "name": "Brain Buster",
+        "image": "brain_buster.png",
+        "topic": "Puzzle",
+        "prize": "2K"
+      },
+      {
+        "name": "Brain Fight",
+        "image": "brain_fight.png",
+        "topic": "Puzzle",
+        "prize": "9K"
+      },
+      {
+        "name": "Challenge",
+        "image": "challenge.png",
+        "topic": "Arcade",
+        "prize": "1K"
+      },
+      {
+        "name": "Double Down",
+        "image": "double_down.png",
+        "topic": "Strategy",
+        "prize": "5K"
+      },
+      {
+        "name": "Kids Quiz League",
+        "image": "kids_quiz.png",
+        "topic": "Puzzle",
+        "prize": "16K"
+      }
+    ],
+    "history": [
+      {
+        "name": "Master Game",
+        "image": "master_game.png",
+        "topic": "Puzzle",
+        "prize": "8K"
+      },
+      {
+        "name": "Master Minds",
+        "image": "masterminds.png",
+        "topic": "Strategy",
+        "prize": "3K"
+      },
+      {
+        "name": "Quiz Bowl",
+        "image": "quiz_bowl.png",
+        "topic": "Puzzle",
+        "prize": "20K"
+      },
+      {
+        "name": "QuizQ",
+        "image": "quizq.png",
+        "topic": "Puzzle",
+        "prize": "5K"
+      },
+      {
+        "name": "Quiz Show",
+        "image": "quizshow.png",
+        "topic": "Puzzle",
+        "prize": "7K"
+      },
+      {
+        "name": "Super Quiz",
+        "image": "super_quiz.png",
+        "topic": "Puzzle",
+        "prize": "3K"
+      },
+      {
+        "name": "Universal Challenge",
+        "image": "universal_challenge.png",
+        "topic": "Strategy",
+        "prize": "9K"
+      },
+      {
+        "name": "Whiz Quiz",
+        "image": "whiz_quiz.png",
+        "topic": "Puzzle",
+        "prize": "11K"
+      },
+      {
+        "name": "Quiz Up",
+        "image": "quizup.png",
+        "topic": "Puzzle",
+        "prize": "7K"
+      }
+    ]
+  }
+}

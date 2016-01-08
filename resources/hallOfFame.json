@@ -1,0 +1,41 @@
+[{"name":"Anil Sawant",
+  "img":"pic1.jpg",
+  "points":3000,
+  "games":20,
+  "badge":5,
+  "win":98,
+  "cat":"Bolly, Music, Soccer"
+  },
+  {"name":"Anil Sawant",
+    "img":"pic1.jpg",
+    "points":3000,
+    "games":20,
+    "badge":5,
+    "win":98,
+    "cat":"Bolly, Music, Soccer"
+    }
+    ,
+    {   "name":"Anil Sawant",
+      "img":"pic1.jpg",
+      "points":3000,
+      "games":20,
+      "badge":5,
+      "win":98,
+      "cat":"Bolly, Music, Soccer"
+      },{
+        "name":"Anil Sawant",
+        "img":"pic1.jpg",
+        "points":3000,
+        "games":20,
+        "badge":5,
+        "win":98,
+        "cat":"Bolly, Music, Soccer"
+        },{
+          "name":"Anil Sawant",
+          "img":"pic1.jpg",
+          "points":3000,
+          "games":20,
+          "badge":5,
+          "win":98,
+          "cat":"Bolly, Music, Soccer"
+          }]
