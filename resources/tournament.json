@@ -2,170 +2,140 @@
   "tournaments": {
     "created": [
       {
-        "name": "Archery",
-        "image": "archery.png",
-        "topic": "Sports",
-        "prize": "12K"
-      },
-      {
-        "name": "Blood Elf",
-        "image": "bloodelf.png",
-        "topic": "Arcade",
-        "prize": "15K"
-      },
-      {
-        "name": "Slots",
-        "image": "slots.png",
-        "topic": "Casino",
-        "prize": "4K"
-      },
-      {
-        "name": "Night Elf",
-        "image": "tabard_nightelf.png",
-        "topic": "Arcade",
-        "prize": "11K"
-      },
-      {
-        "name": "WordStorm",
-        "image": "wordstrom.png",
+        "name": "Riddles",
+        "image": "riddle.png",
         "topic": "Puzzle",
-        "prize": "12K"
+        "prize": "1K"
       },
       {
-        "name": "Roars",
-        "image": "animals.png",
-        "topic": "Strategy",
-        "prize": "16K"
-      },
-      {
-        "name": "Movie Masters",
-        "image": "movie_masters.png",
-        "topic": "Puzzle",
-        "prize": "9K"
-      },
-      {
-        "name": "Basket Halls",
-        "image": "baskethalls.png",
+        "name": "Cave Escape",
+        "image": "caveescape.png",
         "topic": "Sports",
-        "prize": "10K"
+        "prize": "Free"
+      },
+      {
+        "name": "Game Crafter",
+        "image": "gamecrafter.png",
+        "topic": "Sports",
+        "prize": "Free"
+      },
+      {
+        "name": "Poke Me",
+        "image": "poker.png",
+        "topic": "Puzzle",
+        "prize": "Free"
+      },
+      {
+        "name": "Guess the Song",
+        "image": "guesssong.png",
+        "topic": "Music",
+        "prize": "Free"
+      },
+      {
+        "name": "True Football Series 2",
+        "image": "trueball.png",
+        "topic": "Sports",
+        "prize": "Free"
       }
-    ],
+    ],  
     "playing": [
       {
-        "name": "Travel Trues",
-        "image": "travel_trues.png",
-        "topic": "Strategy",
-        "prize": "14K"
+        "name": "Word Quiz",
+        "image": "wordquiz.png",
+        "topic": "Puzzle",
+        "prize": "1K"
       },
       {
-        "name": "Double Shots",
-        "image": "double_shots.png",
-        "topic": "Sports",
-        "prize": "12K"
+        "name": "Cultural Crust",
+        "image": "culturequiz.png",
+        "topic": "Culture",
+        "prize": "Free"
       },
       {
-        "name": "Angry Frogs",
-        "image": "angry_frogs.png",
-        "topic": "Arcade",
-        "prize": "11K"
+        "name": "Logo Finder",
+        "image": "logo_finder.png",
+        "topic": "Puzzle",
+        "prize": "Free"
       },
       {
-        "name": "Dices",
-        "image": "dice.png",
-        "topic": "Casino",
+        "name": "Get Tagged with Tagline",
+        "image": "tagline_quiz.png",
+        "topic": "Puzzle",
         "prize": "6K"
       },
       {
-        "name": "Academic Bowl",
-        "image": "academic_bowl.png",
+        "name": "Holloweens",
+        "image": "holloween.png",
         "topic": "Learning",
-        "prize": "3K"
+        "prize": "Free"
       },
       {
-        "name": "Brain Buster",
-        "image": "brain_buster.png",
+        "name": "Take the Antalnta Quiz",
+        "image": "atlantaquiz.png",
         "topic": "Puzzle",
         "prize": "2K"
       },
       {
-        "name": "Brain Fight",
-        "image": "brain_fight.png",
+        "name": "Big Brain Fight",
+        "image": "big_brain_quiz.png",
         "topic": "Puzzle",
         "prize": "9K"
-      },
-      {
-        "name": "Challenge",
-        "image": "challenge.png",
-        "topic": "Arcade",
-        "prize": "1K"
-      },
-      {
-        "name": "Double Down",
-        "image": "double_down.png",
-        "topic": "Strategy",
-        "prize": "5K"
-      },
-      {
-        "name": "Kids Quiz League",
-        "image": "kids_quiz.png",
-        "topic": "Puzzle",
-        "prize": "16K"
       }
     ],
     "history": [
       {
-        "name": "Master Game",
-        "image": "master_game.png",
-        "topic": "Puzzle",
+        "name": "Approids Bollyood Quiz Trivia",
+        "image": "bollywood_quiz.png",
+        "topic": "Movies",
         "prize": "8K"
       },
       {
-        "name": "Master Minds",
-        "image": "masterminds.png",
+        "name": "World Capital Finder",
+        "image": "world_capital_quiz.png",
         "topic": "Strategy",
         "prize": "3K"
       },
       {
-        "name": "Quiz Bowl",
-        "image": "quiz_bowl.png",
+        "name": "Pop celeb Connect",
+        "image": "celeb_quiz.png",
         "topic": "Puzzle",
         "prize": "20K"
       },
       {
-        "name": "QuizQ",
-        "image": "quizq.png",
+        "name": "Fight the Tug of Taglines",
+        "image": "tagline_quiz.png",
         "topic": "Puzzle",
-        "prize": "5K"
+        "prize": "Free"
       },
       {
-        "name": "Quiz Show",
-        "image": "quizshow.png",
+        "name": "Kaun Banega Millionair",
+        "image": "kbc_quiz.png",
         "topic": "Puzzle",
         "prize": "7K"
       },
       {
-        "name": "Super Quiz",
-        "image": "super_quiz.png",
-        "topic": "Puzzle",
-        "prize": "3K"
+        "name": "Guess the Movie",
+        "image": "guess_movie_quiz.png",
+        "topic": "Movies",
+        "prize": "Free"
       },
       {
-        "name": "Universal Challenge",
-        "image": "universal_challenge.png",
-        "topic": "Strategy",
+        "name": "Brain IQ Master in Hindi",
+        "image": "brain_master_hindi.png",
+        "topic": "Puzzle",
         "prize": "9K"
       },
       {
-        "name": "Whiz Quiz",
-        "image": "whiz_quiz.png",
-        "topic": "Puzzle",
-        "prize": "11K"
+        "name": "Food Trivia",
+        "image": "food_trivia.png",
+        "topic": "Foods",
+        "prize": "Free"
       },
       {
-        "name": "Quiz Up",
-        "image": "quizup.png",
+        "name": "Tech city",
+        "image": "tech_quiz.png",
         "topic": "Puzzle",
-        "prize": "7K"
+        "prize": "Free"
       }
     ]
   }
