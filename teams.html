@@ -61,15 +61,14 @@
       <div class="container" id="teams-wrap">
         <h1>Teams / Quiz Groups</h1>
         <!-- Row 1 -->
+        <div class="row" id="createTeam">
+          <a href="#createTeamModal" data-toggle="modal">
+            <img src="images/create_group_64x64.png" alt="Group+" />
+            <b><h4>Create a new Quiz Team</h4></b>
+          </a>
+        </div>
 
-          <div class="row" id="createTeam">
-            <a href="#createTeamModal" data-toggle="modal">
-              <img src="images/create_group_64x64.png" alt="Group+" />
-              <b><h4>Create a new Quiz Team</h4></b>
-            </a>
-          </div>
-
-        <!-- Modal window for "create a new team"   -->
+        <!-- Modal window to "create a new team"   -->
         <div class="modal fade" id="createTeamModal">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -161,35 +160,75 @@
             </div><!-- End modal-dialog -->
           </div><!-- End createTeamModal -->
 
-        <div class="divider len-30"></div>
+          <div class="divider len-30"></div>
 
-        <!-- Row 2 -->
-        <div class="row">
-          <h4>Teams you are part of :</h4>
-          <script id="teamsPartOf" type="template">
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="tile">
-                <img src="{{image}}" alt="{{name}}.png" class="img-responsive" />
-                <p>{{name}}</p>
+          <!-- Row 2 -->
+          <div class="row">
+            <h4>Teams you are part of :</h4>
+            <div class="carousel slide" id="myCarousel1">
+              <!-- Carousel Indicators -->
+              <ol class="carousel-indicators">
+                <!-- <li data-target="#myCarousel1" data-slide-to="0"></li> -->
+              </ol>
+              <!-- Carousel Wrapper -->
+              <div class="carousel-inner">
+                <!-- Carousel Item -->
+                <div class="item">
+                  <script id="teamsPartOf" type="template">
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                      <div class="tile">
+                        <img src="{{image}}" alt="{{name}}.png" class="img-responsive" />
+                        <p>{{name}}</p>
+                      </div>
+                    </div>
+                  </script>
+                </div>
               </div>
-            </div>
-          </script>
-        </div><!-- End row 2-->
+
+              <!-- Carousel Controls -->
+              <a class="left carousel-control" data-slide="prev" href="#myCarousel1">
+                <span class="icon-prev"> </span>
+              </a>
+              <a class="right carousel-control" data-slide="next" href="#myCarousel1">
+                <span class="icon-next"> </span>
+              </a>
+          </div><!-- end carousel-->
+        </div> <!-- end row 2 -->
 
         <div class="divider len-20"></div>
 
         <!-- Row 3 -->
         <div class="row">
-          <h4>Teams Created by you :</h4>
-          <script id="teamsCreated" type="template">
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="tile">
-                <img src="{{image}}" alt="{{name}}.png" class="img-responsive" />
-                <p>{{name}}</p>
+          <h4>Teams created by you :</h4>
+          <div class="carousel slide" id="myCarousel2">
+            <!-- Carousel Indicators -->
+            <ol class="carousel-indicators">
+              <!-- <li data-target="#myCarousel1" data-slide-to="0"></li> -->
+            </ol>
+            <!-- Carousel Wrapper -->
+            <div class="carousel-inner">
+              <!-- Carousel Item -->
+              <div class="item">
+                <script id="teamsCreated" type="template">
+                  <div class="col-xs-6 col-sm-3 col-md-3">
+                    <div class="tile">
+                      <img src="{{image}}" alt="{{name}}.png" class="img-responsive" />
+                      <p>{{name}}</p>
+                    </div>
+                  </div>
+                </script>
               </div>
             </div>
-          </script>
-        </div><!-- End row 3-->
+
+            <!-- Carousel Controls -->
+            <a class="left carousel-control" data-slide="prev" href="#myCarousel2">
+              <span class="icon-prev"> </span>
+            </a>
+            <a class="right carousel-control" data-slide="next" href="#myCarousel2">
+              <span class="icon-next"> </span>
+            </a>
+          </div><!-- end carousel-->
+        </div> <!-- end row 3 -->
 
         <div class="divider len-50"></div>
 
@@ -200,15 +239,35 @@
             <h5>
               Requests made :
             </h5>
-            <script id="requestsMade" type="template">
-              <div class="col-xs-6 col-sm-4 col-md-3">
-                <div class="tile">
-                  <img src="{{image}}" alt="{{name}}.png" class="img-responsive" />
-                  <p>{{name}}</p>
+            <div class="carousel slide" id="myCarousel3">
+              <!-- Carousel Indicators -->
+              <ol class="carousel-indicators">
+                <!-- <li data-target="#myCarousel" data-slide-to="0"></li> -->
+              </ol>
+              <!-- Carousel Wrapper -->
+              <div class="carousel-inner">
+                <!-- Carousel Item -->
+                <div class="item">
+                  <script id="requestsMade" type="template">
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                      <div class="tile">
+                        <img src="{{image}}" alt="{{name}}.png" class="img-responsive" />
+                        <p>{{name}}</p>
+                      </div>
+                    </div>
+                  </script>
                 </div>
               </div>
-            </script>
-          </div>
+
+              <!-- Carousel Controls -->
+              <a class="left carousel-control" data-slide="prev" href="#myCarousel3">
+                <span class="icon-prev"> </span>
+              </a>
+              <a class="right carousel-control" data-slide="next" href="#myCarousel3">
+                <span class="icon-next"> </span>
+              </a>
+            </div><!-- end carousel-->
+          </div><!-- end #requests-->
           <div class="col-xs-12" id="makeRequest">
             <div class="col-xs-3">
               <label for="txtMakeRequest">Make request : </label>
@@ -221,15 +280,35 @@
 
           <div class="row" id="invitations">
             <h5>Invitations received :</h5>
-            <script id="invitationsReceived" type="template">
-              <div class="col-xs-6 col-sm-4 col-md-3">
-                <div class="tile">
-                  <img src="{{image}}" alt="{{name}}.png" class="img-responsive" />
-                  <p>{{name}}</p>
+            <div class="carousel slide" id="myCarousel4">
+              <!-- Carousel Indicators -->
+              <ol class="carousel-indicators">
+                <!-- <li data-target="#myCarousel" data-slide-to="0"></li> -->
+              </ol>
+              <!-- Carousel Wrapper -->
+              <div class="carousel-inner">
+                <!-- Carousel Item -->
+                <div class="item">
+                  <script id="invitationsReceived" type="template">
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                      <div class="tile">
+                        <img src="{{image}}" alt="{{name}}.png" class="img-responsive" />
+                        <p>{{name}}</p>
+                      </div>
+                    </div>
+                  </script>
                 </div>
               </div>
-            </script>
-          </div>
+
+              <!-- Carousel Controls -->
+              <a class="left carousel-control" data-slide="prev" href="#myCarousel4">
+                <span class="icon-prev"> </span>
+              </a>
+              <a class="right carousel-control" data-slide="next" href="#myCarousel4">
+                <span class="icon-next"> </span>
+              </a>
+            </div><!-- end carousel-->
+          </div><!-- End #invitations -->
         </div><!-- End Row 4 -->
 
         <div class="divider len-80"></div>
@@ -237,15 +316,35 @@
         <!-- Row 5 -->
         <div class="row">
           <h4>Teams of Interest :</h4>
-          <script id="teamsOfInterest" type="template">
-            <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="tile">
-                <img src="{{image}}" alt="{{name}}.png" class="img-responsive" />
-                <p>{{name}}</p>
+          <div class="carousel slide" id="myCarousel5">
+            <!-- Carousel Indicators -->
+            <ol class="carousel-indicators">
+              <!-- <li data-target="#myCarousel" data-slide-to="0"></li> -->
+            </ol>
+            <!-- Carousel Wrapper -->
+            <div class="carousel-inner">
+              <!-- Carousel Item -->
+              <div class="item">
+                <script id="teamsOfInterest" type="template">
+                  <div class="col-xs-6 col-sm-3 col-md-3">
+                    <div class="tile">
+                      <img src="{{image}}" alt="{{name}}.png" class="img-responsive" />
+                      <p>{{name}}</p>
+                    </div>
+                  </div>
+                </script>
               </div>
             </div>
-          </script>
-        </div><!-- End row 5-->
+
+            <!-- Carousel Controls -->
+            <a class="left carousel-control" data-slide="prev" href="#myCarousel5">
+              <span class="icon-prev"> </span>
+            </a>
+            <a class="right carousel-control" data-slide="next" href="#myCarousel5">
+              <span class="icon-next"> </span>
+            </a>
+          </div><!-- end carousel-->
+        </div> <!-- end row 5 -->
       </div><!-- End #teams-wrap -->
 
     <!-- <script src="http://code.jquery.com/jquery.js"></script> -->

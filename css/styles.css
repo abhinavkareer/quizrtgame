@@ -1,3 +1,46 @@
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+.carousel {
+  margin-top: 20px;
+}
+
+.carousel .item {
+  height: 200px;
+}
+
+.carousel>a {
+  outline: none;
+}
+.carousel>a:active {
+  background-color: #666;
+  transition: background-color 1.5s linear;
+}
+
+.carousel>a:hover {
+  color: #428bca;
+}
+.carousel-control {
+  width: 60px;
+}
+.carousel-control span{
+  margin-left: -20px !important;
+}
+.carousel-indicators {
+  bottom: -36px !important;
+}
+.carousel-indicators li{
+  margin: 0 2px !important;
+}
+.carousel h4 {
+  font-size: 36px;
+}
+
+
+
+
 body {
   background-color: #293a46;
   background-image: url('../images/backgrounds/1.png');
