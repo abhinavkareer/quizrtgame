@@ -5,7 +5,7 @@
         "name": "Riddles",
         "image": "riddle.png",
         "topic": "Puzzle",
-        "prize": "1K"
+        "prize": "$ 1K"
       },
       {
         "name": "Cave Escape",
@@ -43,7 +43,7 @@
         "name": "Word Quiz",
         "image": "wordquiz.png",
         "topic": "Puzzle",
-        "prize": "1K"
+        "prize": "$ 1K"
       },
       {
         "name": "Cultural Crust",
@@ -61,7 +61,7 @@
         "name": "Get Tagged with Tagline",
         "image": "tagline_quiz.png",
         "topic": "Puzzle",
-        "prize": "6K"
+        "prize": "$ 6K"
       },
       {
         "name": "Holloweens",
@@ -73,13 +73,13 @@
         "name": "Take the Antalnta Quiz",
         "image": "atlantaquiz.png",
         "topic": "Puzzle",
-        "prize": "2K"
+        "prize": "$ 2K"
       },
       {
         "name": "Big Brain Fight",
         "image": "big_brain_quiz.png",
         "topic": "Puzzle",
-        "prize": "9K"
+        "prize": "$ 9K"
       }
     ],
     "history": [
@@ -87,19 +87,19 @@
         "name": "Approids Bollyood Quiz Trivia",
         "image": "bollywood_quiz.png",
         "topic": "Movies",
-        "prize": "8K"
+        "prize": "$ 8K"
       },
       {
         "name": "World Capital Finder",
         "image": "world_capital_quiz.png",
         "topic": "Strategy",
-        "prize": "3K"
+        "prize": "$ 3K"
       },
       {
         "name": "Pop celeb Connect",
         "image": "celeb_quiz.png",
         "topic": "Puzzle",
-        "prize": "20K"
+        "prize": "$ 20K"
       },
       {
         "name": "Fight the Tug of Taglines",
@@ -111,7 +111,7 @@
         "name": "Kaun Banega Millionair",
         "image": "kbc_quiz.png",
         "topic": "Puzzle",
-        "prize": "7K"
+        "prize": "$ 7K"
       },
       {
         "name": "Guess the Movie",
@@ -123,7 +123,7 @@
         "name": "Brain IQ Master in Hindi",
         "image": "brain_master_hindi.png",
         "topic": "Puzzle",
-        "prize": "9K"
+        "prize": "$ 9K"
       },
       {
         "name": "Food Trivia",
