@@ -26,12 +26,6 @@
         "prize": "Free"
       },
       {
-        "name": "Guess the Song",
-        "image": "guesssong.png",
-        "topic": "Music",
-        "prize": "Free"
-      },
-      {
         "name": "True Football Series 2",
         "image": "trueball.png",
         "topic": "Sports",
@@ -46,9 +40,9 @@
         "prize": "$ 1K"
       },
       {
-        "name": "Cultural Crust",
-        "image": "culturequiz.png",
-        "topic": "Culture",
+        "name": "Shutterstock Basketball Tournament",
+        "image": "shutterstock.png",
+        "topic": "Sports",
         "prize": "Free"
       },
       {
@@ -76,8 +70,8 @@
         "prize": "$ 2K"
       },
       {
-        "name": "Big Brain Fight",
-        "image": "big_brain_quiz.png",
+        "name": "Unreal Tournament 3",
+        "image": "unreal_logo.png",
         "topic": "Puzzle",
         "prize": "$ 9K"
       }
@@ -108,14 +102,14 @@
         "prize": "Free"
       },
       {
-        "name": "Kaun Banega Millionair",
-        "image": "kbc_quiz.png",
-        "topic": "Puzzle",
-        "prize": "$ 7K"
+        "name": "Pocket Night with your Friends",
+        "image": "pocket_night.png",
+        "topic": "Indoor",
+        "prize": "Free"
       },
       {
-        "name": "Guess the Movie",
-        "image": "guess_movie_quiz.png",
+        "name": "Hoop IT Up 3on3",
+        "image": "hoop_it_up.png",
         "topic": "Movies",
         "prize": "Free"
       },
