@@ -2,8 +2,8 @@
   "tournaments": {
     "created": [
       {
-        "name": "Riddles",
-        "image": "riddle.png",
+        "name": "Freefall Avatar",
+        "image": "freefall_avatar.png",
         "topic": "Puzzle",
         "prize": "$ 1K"
       },
@@ -40,7 +40,7 @@
     ],  
     "playing": [
       {
-        "name": "Word Quiz",
+        "name": "Scrabble Word Finder",
         "image": "wordquiz.png",
         "topic": "Puzzle",
         "prize": "$ 1K"
