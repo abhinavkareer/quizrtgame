@@ -99,6 +99,7 @@ footer li a , footer li a:hover{
 .tournament {
 	color: #fff;
 	text-align: center;
+	cursor: pointer;
 }
 
 .tournament-heading {
@@ -143,8 +144,3 @@ footer li a , footer li a:hover{
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
- @media (max-width: 768px) {
- 	.tournament {
- 		width: 33.33333333%;
- 	}
- }
