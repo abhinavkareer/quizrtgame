@@ -1,15 +1,10 @@
-#addTeamPhoto a {
-  border: 1px solid #666;
-  border-radius: 80px;
-  display: block;
-  height: 64px;
-  padding: 10px 12px;
-  text-align: center;
-  text-decoration: none;
-  width: 64px;
-}
 body {
   background-color: #293a46;
+  background-image: url('../images/backgrounds/1.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #content {
   padding-top: 300px;
@@ -54,13 +49,59 @@ body {
 }
 #createTeamModal .modal-body h3,
 #createTeamModal .modal-body p {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 10px;
   text-align: center;
 }
 #createTeamModal .modal-body p {
-  color: #aaa;
+  color: #ccc;
 }
 #createTeamModal .modal-body h5 {
+  color: #fff;
   font-weight: bold;
+}
+#createTeamModal #addTeamPhoto a {
+  border: 1px solid #bbb;
+  border-radius: 80px;
+  color: #f2f2f2;
+  display: block;
+  height: 64px;
+  padding: 10px 12px;
+  text-align: center;
+  text-decoration: none;
+  width: 64px;
+}
+#createTeamModal #addTeamPhoto a:hover {
+  border: 1px solid black;
+  color: black;
+}
+#createTeamModal .modal-body {
+  background: #777;
+  display: none;
+}
+#createTeamModal .modal-body:nth-child(2){
+  display: block;
+}
+#createTeamModal #selectQuiz .input-group {
+  margin-top: 60px;
+}
+#createTeamModal .quiz-topic {
+  background: #999;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #222;
+  cursor: pointer;
+  margin: 1px;
+  padding: 3px;
+}
+#createTeamModal .quiz-topic p{
+  color: inherit;
+  margin: 0;
+}
+#createTeamModal .quiz-topic:nth-child(2n) {
+  background: #555;
+  color: #f2f2f2;
 }
 .input-group-addon label {
   margin-bottom: 0;
@@ -86,7 +127,7 @@ body {
   cursor: pointer;
 }
 .tile {
-  background: #666;
+  background: rgba(120,140,150,.7); /* bluish transparent */
   margin: 2px -12px; /* to remove 15px padding and add 4px space b/w tiles */
   text-align: center;
 }
@@ -98,7 +139,7 @@ body {
   transform: translate(0,0);
 }
 .tile p {
-  text-overflow: clip;
+  padding: 5px 0;
   margin-bottom: 0;
 }
 #teams-wrap .row {
@@ -115,6 +156,59 @@ body {
   margin: 0;
 }
 
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+.navbar-fixed-top{
+   background-color: #1A1C22;
+}
+.navbar-header h2{
+	margin: 10px 0 0;
+	padding: 0 10px 0 0;
+	color: #fff;
+}
+
+.nav li a{
+  border-radius: 4px;
+	color: #cfd2da;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.nav>.active>a{
+	color: #fff;
+	background-color: #32566f !important;
+	border-radius: 4px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+.nav>li> a:active {
+  background-color: transparent;
+}
+.nav>li>a:hover{
+	background-color: #32566f !important;
+	color: rgba(255, 255, 255, 1);
+	transition: background-color 0.5s ease;
+}
+.nav>li.dropdown>ul {
+  background-color: #1A1C22;
+}
+
+.nav>li.dropdown>a:focus{
+  background-color: #32566f;
+}
+.nav>li.dropdown>a:active {
+  background-color: red;
+}
+.navbar-toggle .icon-bar {
+   background-color: #fff;
+}
+
+.navbar-toggle {
+   border: 1px solid #777;
+}
 
 /*.............................................................................
                       Horizontal Dividers
@@ -164,5 +258,7 @@ body {
   .row h4 {
     text-align: center;
   }
-
+  .tile p {
+    padding: 2px 0;
+  }
 }

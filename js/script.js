@@ -8,24 +8,54 @@
 												 .html('No Data Found');
 
     for (var i = 0; i < len; i++) {
-      var rowTemplate = $( ('#' + rows[i]) );
-      if( rowTemplate ) {
+      var rowTemplateElement = $( ('#' + rows[i]) );
+      if( rowTemplateElement ) {
         var teamsInRow = data[ rows[i] ],
             noOfTeams = teamsInRow.length,
-            rowTemplateHtml = $.trim(rowTemplate.html());
+            rowTemplateHtml = $.trim(rowTemplateElement.html());
 				if ( noOfTeams > 0 ) {
 					for (var j = 0; j < noOfTeams; j++) {
 	          var teamTile = rowTemplateHtml;
-	          teamTile = teamTile.replace(/{{image}}/ig, 'images/team-icons/' + teamsInRow[j].icon ) //'images/team-icons/team_default_64x64.png'
+	          teamTile = teamTile.replace(/{{image}}/ig, 'images/team-icons/' + teamsInRow[j].icon )
 	                             .replace(/{{name}}/ig, teamsInRow[j].teamName );
 
-	          rowTemplate.closest('.row').append( teamTile );
+	          rowTemplateElement.closest('.row').append( teamTile );
 	        }
 				}else {
-					rowTemplate.closest('.row').append( noData );
+					rowTemplateElement.closest('.row').append( noData );
 				}
 
       }
     }
   });
+
+	var modalBodyElements = $('#createTeamModal').find('.modal-body'),
+			noOfModalBodyElements = modalBodyElements.length,
+			pos = 0;
+	$('#btnNextCreateTeamModal').on( 'click', function() {
+		// runs the loop only till penultimate member.
+		for (var i = pos; i < noOfModalBodyElements-1; i++) { // last modal-body should not be slided (hence noOfModalBodyElements-1)
+			var $modalBody = $( modalBodyElements[i] );
+			if( pos == $modalBody.data('pos')) {
+				$modalBody.slideUp();
+				$modalBody.next('.modal-body').slideDown();
+				pos++;
+				break;
+			}
+		}
+	});
+	$('#btnBackCreateTeamModal').on( 'click', function() {
+		// runs the loop only till first member.
+		for (var i = noOfModalBodyElements-1; i > 0; i--) { // first modal-body should not be slided
+			var $modalBody = $( modalBodyElements[i] );
+			if( pos == $modalBody.data('pos')) {
+				$modalBody.slideUp();
+				$modalBody.prev('.modal-body').slideDown();
+				pos--;
+				break;
+			}
+		}
+	});
+
+
 })(jQuery);
