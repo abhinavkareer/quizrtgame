@@ -55,22 +55,6 @@
       "members":["satishsukumar","mukund","nishant","sachingrover","anilsawant"],
       "played": 20,
       "won": 20
-    },
-    {"teamName": "StakRoute Marines",
-      "type": "Friends",
-      "icon": "chargers.png",
-      "topics": ["JavaScript","jQuery","Node"],
-      "members":["satishsukumar","mukund","nishant","sachingrover","anilsawant"],
-      "played": 20,
-      "won": 20
-    },
-    {"teamName": "StakRoute Marines",
-      "type": "Friends",
-      "icon": "chargers.png",
-      "topics": ["JavaScript","jQuery","Node"],
-      "members":["satishsukumar","mukund","nishant","sachingrover","anilsawant"],
-      "played": 20,
-      "won": 20
     }],
 "teamsCreated" : [
     {"teamName": "Fire Breathers",

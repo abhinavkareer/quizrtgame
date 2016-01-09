@@ -6,10 +6,7 @@
 .carousel {
   margin-top: 20px;
 }
-.carousel-inner {
-  width: auto !important;
-  margin: auto !important;
-}
+
 .carousel>a {
   outline: none;
 }
