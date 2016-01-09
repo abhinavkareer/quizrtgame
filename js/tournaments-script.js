@@ -1,10 +1,10 @@
 (function($){
 	var tile_colors = ['#2672EC' , '#5133AB' , '#AC193D' , '#D24726' , '#008A00' , '#00A3A3'],
-		template = $.trim($("#tournamentTemplate").html())
+		template = $.trim($("#tournamentTemplate").html());
 	
 	// ajax call to load json file
 	$.getJSON('resources/tournament.json').done(function(data){
-		
+
 		// update partOfTournament Carousel
 		updateCarousel( $("#partofTournammentCarousel"), template, data.tournaments.playing);
 		
@@ -26,7 +26,7 @@
 		var fragment ="";
 		
 		$.each( data, function( i, item ) {
-			fragment += template.replace(/{{name}}/ig , item.name)
+			fragment = template.replace(/{{name}}/ig , item.name)
 								.replace(/{{image}}/ig , "images/" +item.image)
 								.replace(/{{prize}}/ig , item.prize)
 								.replace(/{{topic}}/ig , item.topic);
@@ -34,23 +34,20 @@
 			if(i<3){
 				
 				$container.find(".item.active").append(fragment);
-				var temp = $("#createdTournammentsCarousel .item.active div").last();
-				
-				//addClass('tile-'+ (i%6));
-				fragment ="";
 
 			}else if((i!= 0) && (i%3 == 0)){
 				var temp= $("<div class='item'></div>").append(fragment);
-				//temp.addClass('tile-'+ (i%6));
 				$container.find(".carousel-inner").append(temp);
-				
-				fragment = "";
+
 			}else if(i%3 > 0){
-				
 				$container.find("div.item").last().append(fragment);
-				
-				fragment = "";
 			}
+
+			$container.find(".tournament").last()
+							.css("background" ,"url('images/" +item.image+ "') left top no-repeat")
+							.css("background-size" , "100% 100%")
+							.find(".tournament-details")
+							.css("background-color" , tile_colors[i%6]);
 		});
 
 	}

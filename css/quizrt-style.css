@@ -92,14 +92,17 @@ footer li a , footer li a:hover{
 	
 }
 
-#myTournaments .col-sm-4.col-xs-4{
-    padding:5px;
-}
-
 .tournament {
 	color: #fff;
 	text-align: center;
 	cursor: pointer;
+	padding-top: 70%;
+	width: 100%;
+	height: auto;
+}
+
+.tournament-details{
+	background-color: #2672EC;
 }
 
 .tournament-heading {
