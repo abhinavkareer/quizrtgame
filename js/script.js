@@ -77,6 +77,7 @@ var quizRTData = {
 							for (var b = 0; b < splitContent[a].length; b++) {
 								newRowItem.append( splitContent[a][b] );
 							}
+							console.log(newRowItem);
 							rowCarouselInner.append( newRowItem );
 						} else {
 							// var newItem = rowItem.clone(true).html('');
@@ -84,6 +85,7 @@ var quizRTData = {
 							for (var b = 0; b < splitContent[a].length; b++) {
 								newRowItem.append( splitContent[a][b] );
 							}
+							console.log(newRowItem);
 							rowCarouselInner.append( newRowItem );
 						}
 						carouselIndicatorContainer.append( indicator ); // add the indicator to the container
@@ -102,7 +104,23 @@ var quizRTData = {
     }// end for
 	} // End constructRowsAndTiles
 
+	$('#btnRedraw').on('click', function () {
+		forceRedraw($('.carousel-inner .item').eq(0)[0]);
+	});
 
+	var forceRedraw = function ( element ) {
+		if( !element )
+			return;
+
+		var n = document.createTextNode(' ');
+		var disp = element.style.display;
+		element.appendChild(n);
+		element.style.display = 'none';
+		setTimeout( function() {
+			element.style.display = disp;
+			n.parentNode.removeChild(n);
+		}, 20 );
+	};
 	/*...........................................................................
 			Event handlers for Next and Back buttons in createTeamModal window
 ..............................................................................*/

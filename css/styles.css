@@ -6,7 +6,6 @@
 .carousel {
   margin-top: 20px;
 }
-
 .carousel>a {
   outline: none;
 }
@@ -14,7 +13,6 @@
   background-color: #666;
   transition: background-color 1.5s linear;
 }
-
 .carousel>a:hover {
   color: #428bca;
 }
@@ -299,5 +297,12 @@ body {
   }
   .tile p {
     padding: 2px 0;
+  }
+  .tile:hover {
+    cursor: pointer;
+    transform: translate(0,0);
+  }
+  .tile:active {
+    opacity: .6
   }
 }
