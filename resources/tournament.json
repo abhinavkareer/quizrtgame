@@ -14,14 +14,14 @@
         "prize": "Free"
       },
       {
-        "name": "Game Crafter",
-        "image": "gamecrafter.png",
+        "name": "Build your Adventure !!!",
+        "image": "build_adventure_quiz.png",
         "topic": "Sports",
         "prize": "Free"
       },
       {
-        "name": "Poke Me",
-        "image": "poker.png",
+        "name": "Lengend of Korra EPIC Travia Quest",
+        "image": "korra_epic_trivia_quiz.png",
         "topic": "Puzzle",
         "prize": "Free"
       },
@@ -34,20 +34,20 @@
     ],  
     "playing": [
       {
-        "name": "Scrabble Word Finder",
-        "image": "wordquiz.png",
+        "name": "Teenage Mutant Ninja Turtles",
+        "image": "tmnt-whats-your-ninja-weapon-4x3.png",
         "topic": "Puzzle",
         "prize": "$ 1K"
       },
       {
-        "name": "Shutterstock Basketball Tournament",
+        "name": "Shutterstock Basketball",
         "image": "shutterstock.png",
         "topic": "Sports",
         "prize": "Free"
       },
       {
-        "name": "Logo Finder",
-        "image": "logo_finder.png",
+        "name": "What kind of Shakers are U?",
+        "image": "shaker_quiz.png",
         "topic": "Puzzle",
         "prize": "Free"
       },
@@ -58,8 +58,8 @@
         "prize": "$ 6K"
       },
       {
-        "name": "Holloweens",
-        "image": "holloween.png",
+        "name": "Science without Border",
+        "image": "science_without_borders.png",
         "topic": "Learning",
         "prize": "Free"
       },
@@ -78,8 +78,8 @@
     ],
     "history": [
       {
-        "name": "Approids Bollyood Quiz Trivia",
-        "image": "bollywood_quiz.png",
+        "name": "What's your Monster Name?",
+        "image": "halloween_quiz.png",
         "topic": "Movies",
         "prize": "$ 8K"
       },
@@ -90,8 +90,8 @@
         "prize": "$ 3K"
       },
       {
-        "name": "Pop celeb Connect",
-        "image": "celeb_quiz.png",
+        "name": "Which spongebob Squrepant are U ?",
+        "image": "spongebob_character_are_you.png",
         "topic": "Puzzle",
         "prize": "$ 20K"
       },
@@ -102,9 +102,9 @@
         "prize": "Free"
       },
       {
-        "name": "Pocket Night with your Friends",
-        "image": "pocket_night.png",
-        "topic": "Indoor",
+        "name": "Hockey Stars",
+        "image": "hockey_stars.png",
+        "topic": "Sports",
         "prize": "Free"
       },
       {
@@ -126,8 +126,8 @@
         "prize": "Free"
       },
       {
-        "name": "Tech city",
-        "image": "tech_quiz.png",
+        "name": "Nick Ultimate Trivia Quiz",
+        "image": "nick_ultimate_trivia_quiz.png",
         "topic": "Puzzle",
         "prize": "Free"
       }

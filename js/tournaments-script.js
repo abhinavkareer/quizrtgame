@@ -1,5 +1,5 @@
 (function($){
-	var tile_colors = ['#2672EC' , '#5133AB' , '#AC193D' , '#D24726' , '#008A00' , '#00A3A3'],
+	var tile_colors = ['#eca026' , '#5133AB' , '#AC193D' , '#D24726' , '#008A00' , '#00A3A3'],
 		template = $.trim($("#tournamentTemplate").html());
 	
 	// ajax call to load json file
@@ -46,8 +46,7 @@
 			$container.find(".tournament").last()
 							.css("background" ,"url('images/" +item.image+ "') left top no-repeat")
 							.css("background-size" , "100% 100%")
-							.find(".tournament-details")
-							.css("background-color" , tile_colors[i%6]);
+							.find(".tournament-details");
 		});
 
 	}
