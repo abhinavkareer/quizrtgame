@@ -38,11 +38,21 @@
                 </div><!-- end collapse -->
             </div>
          </nav><!-- end navbar -->
-         <div class="row" id="tournamentHeading">
-            <h3>Tournaments <small>participate in tournaments around topics you are passionate about and easily discover new topics that match your interests</small></h3>
-         </div><!-- end tournamentHeading -->
+         <section class="title">
+           <div class="container">
+             <h2>Tournaments</h2>
+             <span>Participate in tournaments around topics you are passionate about and easily discover new topics that match your interests</span>
+              <ol class="breadcrum hidden-xs">
+                <li><a href="#">New Tournaments</a></li>
+                <li><a href="#">Top Tournaments</a></li>
+                <li><a href="#">Categories</a></li>
+
+              </ol>
+           </div>
+         </section>
          <div class="tournament-heading">
            <h3>Part of Tournaments</h3>
+           <hr>
          </div>
          <div class="carousel slide" id="partofTournammentCarousel" data-ride="carousel">
             <!-- wrapper for slides -->
@@ -50,9 +60,12 @@
               <script id="tournamentTemplate" type="tournamentTemplate">
                   <div class="col-xs-4 col-sm-4">
                     <div class="tournament">
+
                       <div class="tournament-details">
+
                         <p class="name">{{name}}</p>
                         <span class="prize">{{prize}}</span>
+                        <img class="img-responsive icon-font-game" src="images/icon-font-game.png">
                       </div>
                       
                     </div>
@@ -72,6 +85,7 @@
          </div><!-- end myCarousel -->
          <div class="tournament-heading">
            <h3>Created Tournaments</h3>
+           <hr>
          </div>
          <div class="carousel slide" id="createdTournammentsCarousel" data-ride="carousel">
             <!-- wrapper for slides -->
@@ -88,6 +102,7 @@
          </div> <!-- end created_tournaments -->
          <div class="tournament-heading">
            <h3>Tournaments History</h3>
+           <hr>
          </div>
          <div class="carousel slide" id="playedTournammentsCarousel" data-ride="carousel">
             <!-- wrapper for slides -->
