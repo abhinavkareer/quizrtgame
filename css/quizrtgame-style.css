@@ -1,0 +1,57 @@
+body {
+  background-color: #293a46;
+  background-image: url('../images/backgrounds/1.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+/* --------------------------------------
+                Navbar
+-------------------------------------- */
+
+.navbar-fixed-top{
+   background-color: #1A1C22;
+}
+.navbar-header h2{
+	margin: 10px 0 0;
+	padding: 0 10px 0 0;
+	color: #fff;
+}
+.nav li a{
+  border-radius: 4px;
+	color: #cfd2da;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+.nav>.active>a{
+	color: #fff;
+	background-color: #32566f !important;
+	border-radius: 4px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+.nav>li> a:active {
+  background-color: transparent;
+}
+.nav>li>a:hover{
+	background-color: #32566f !important;
+	color: rgba(255, 255, 255, 1);
+	transition: background-color 0.5s ease;
+}
+.nav>li.dropdown>ul {
+  background-color: #1A1C22;
+}
+.nav>li.dropdown>a:focus{
+  background-color: #32566f;
+}
+.nav>li.dropdown>a:active {
+  background-color: red;
+}
+.navbar-toggle .icon-bar {
+   background-color: #fff;
+}
+.navbar-toggle {
+   border: 1px solid #777;
+}
