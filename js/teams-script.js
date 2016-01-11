@@ -5,6 +5,12 @@ var quizRTData = {
 };
 
 (function($){
+
+	// To select the backgrounds randomly
+	var url = 'url(images/backgrounds/' + Math.floor(Math.random()*3) + '.png)';
+	document.body.style.backgroundImage = url;
+
+
 	var tile_colors = ['#2672EC' , '#5133AB' , '#AC193D' , '#D24726' , '#008A00' , '#00A3A3'];
 	$.getJSON('resources/user1_teams.json').done( function(data) {
 		quizRTData.teamsData = data;
@@ -70,14 +76,12 @@ var quizRTData = {
 						// Create the carousel indicators
 						var indicator = $('<li data-target="#' + rowCarousel.attr('id') + '" data-slide-to="' + a + '"></li>');
 
-						console.log("a = " + a);
 						if (a == 0) {
 							newRowItem.addClass('active'); // To make the first slide visible
 							indicator.addClass('active');
 							for (var b = 0; b < splitContent[a].length; b++) {
 								newRowItem.append( splitContent[a][b] );
 							}
-							console.log(newRowItem);
 							rowCarouselInner.append( newRowItem );
 						} else {
 							// var newItem = rowItem.clone(true).html('');
@@ -85,7 +89,6 @@ var quizRTData = {
 							for (var b = 0; b < splitContent[a].length; b++) {
 								newRowItem.append( splitContent[a][b] );
 							}
-							console.log(newRowItem);
 							rowCarouselInner.append( newRowItem );
 						}
 						carouselIndicatorContainer.append( indicator ); // add the indicator to the container
@@ -104,23 +107,12 @@ var quizRTData = {
     }// end for
 	} // End constructRowsAndTiles
 
-	$('#btnRedraw').on('click', function () {
-		forceRedraw($('.carousel-inner .item').eq(0)[0]);
-	});
 
-	var forceRedraw = function ( element ) {
-		if( !element )
-			return;
+	// To create the bounce effect when a Tile is clicked
+	$('#teams-wrap').on('click', '.tile', function() {
+		$(this).effect( "bounce", {distance:10,times:1},350);
+	} );
 
-		var n = document.createTextNode(' ');
-		var disp = element.style.display;
-		element.appendChild(n);
-		element.style.display = 'none';
-		setTimeout( function() {
-			element.style.display = disp;
-			n.parentNode.removeChild(n);
-		}, 20 );
-	};
 	/*...........................................................................
 			Event handlers for Next and Back buttons in createTeamModal window
 ..............................................................................*/
@@ -169,5 +161,23 @@ var quizRTData = {
 			quizRTData.displaySize = 'small';
 		}
 	});
+
+	$('#btnRedraw').on('click', function () {
+		forceRedraw($('.carousel-inner .item').eq(0)[0]);
+	});
+
+	var forceRedraw = function ( element ) {
+		if( !element )
+			return;
+
+		var n = document.createTextNode(' ');
+		var disp = element.style.display;
+		element.appendChild(n);
+		element.style.display = 'none';
+		setTimeout( function() {
+			element.style.display = disp;
+			n.parentNode.removeChild(n);
+		}, 20 );
+	};
 
 })(jQuery);
