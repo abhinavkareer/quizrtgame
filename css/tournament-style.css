@@ -1,57 +1,4 @@
 /* --------------------------------------
-   Layout
-   -------------------------------------- */
-body {
-	background-color: #293a46;
-}
-
-/* --------------------------------------
-   Navbar
-   -------------------------------------- */
-.navbar-brand{
-	padding: 0;
-    margin-left:0px;
-}
-
-.navbar-fixed-top{
-   background-color: #1A1C22;
-}
-.navbar-header h2{
-	margin: 10px 0 0;
-	padding: 0 10px 0 0;
-	color: #fff;
-}
-
-.nav li a{
-	color: #cfd2da;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-}
-
-.nav>.active>a{
-	color: #fff;
-	background-color: #32566f;
-	border-radius: 4px;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-}
-
-.nav>li>a:hover{
-	background-color: #32566f;
-	color: rgba(255, 255, 255, 1);
-	border-radius: 4px;
-	transition: background-color 0.5s ease;
-}
-
-.navbar-toggle .icon-bar {
-   background-color: #fff;
-}
-
-.navbar-toggle {
-   border: 1px solid #777;
-}
-
-/* --------------------------------------
    Global Styles
    -------------------------------------- */
 .title{
@@ -149,22 +96,6 @@ body {
 .tournament-heading hr{
 	border-top: 1px solid #434857;
 	margin: 0;
-}
-
-.tile-0{
-	background-color: #2672EC;
-}
-
-.tile-1{
-	background-color: #5133AB;
-}
-
-.tile-2{
-	background-color: #AC193D;
-}
-
-.item.tile-3{
-	background-color: #D24726;
 }
 
 #partofTournammentCarousel .item,
