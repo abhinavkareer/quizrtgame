@@ -152,17 +152,20 @@
   cursor: pointer;
 }
 .tile {
-  margin: 2px -12px; /* to remove 15px padding and add 4px space b/w tiles */
+  margin: 4px -10px; /* to remove 15px padding and add 2*4px space b/w tiles */
   text-align: center;
-  transition: opacity 2s ease, box-shadow .5s ease;
+  transition: opacity 2s ease, box-shadow .3s ease;
 }
 .tile:hover {
   box-shadow: 0 0 6px #ddd;
   cursor: pointer;
+  margin: 2px -12px;
   padding: 0;
 }
 .tile:active {
   box-shadow: none;
+  margin: 4px -10px;
+  margin-top: 6px;
   padding: 0 3px;
   opacity: .6;
 }
