@@ -21,7 +21,7 @@
   margin-left: -20px !important;
 }
 .carousel-indicators {
-  bottom: -36px !important;
+  bottom: -36px ;
 }
 .carousel-indicators li{
   margin: 0 2px !important;
@@ -29,7 +29,6 @@
 .carousel h4 {
   font-size: 36px;
 }
-
 
 
 #content {
@@ -155,12 +154,17 @@
 .tile {
   margin: 2px -12px; /* to remove 15px padding and add 4px space b/w tiles */
   text-align: center;
+  transition: opacity 2s ease, box-shadow .5s ease;
 }
 .tile:hover {
+  box-shadow: 0 0 6px #ddd;
   cursor: pointer;
+  padding: 0;
 }
 .tile:active {
-  opacity: .7;
+  box-shadow: none;
+  padding: 0 3px;
+  opacity: .6;
 }
 .tile p {
   background: rgba(120,140,150,.3); /* bluish transparent */
@@ -232,5 +236,5 @@
   .tile p {
     padding: 2px 0;
   }
-  
+
 }

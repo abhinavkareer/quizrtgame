@@ -41,15 +41,15 @@ var quizRTData = {
 
 			if( rowTemplateElement.length ) {
         var teamsInRow = data[ key ],
-            noOfTeams = teamsInRow.length,
+            noOfTeamsInRow = teamsInRow.length,
             rowTemplateHtml = rowTemplateElement.html();
-				if ( noOfTeams > 0 ) {
+				if ( noOfTeamsInRow > 0 ) {
 					var splitContent = [],
 							index,
 							rowCarousel = rowTemplateElement.closest('.carousel'),
 							carouselIndicatorContainer  = rowCarousel.find('.carousel-indicators').html('');
 					var viewPortWidth = $(window).width() ;
-					for (var j = 0; j < noOfTeams; j++) {
+					for (var j = 0; j < noOfTeamsInRow; j++) {
 						if( viewPortWidth > 992 ) { // if width > 992 display 4 tiles in a row
 							index = parseInt(j/4) ;
 							quizRTData.displaySize = 'large';
@@ -92,6 +92,8 @@ var quizRTData = {
 							rowCarouselInner.append( newRowItem );
 						}
 						carouselIndicatorContainer.append( indicator ); // add the indicator to the container
+
+						// Show carousel controls and indicators only when no. of slides is > 1
 						if( a == 0 ) {
 							carouselIndicatorContainer.hide();
 							carouselIndicatorContainer.siblings('.carousel-control').hide();
@@ -99,6 +101,7 @@ var quizRTData = {
 							carouselIndicatorContainer.show();
 							carouselIndicatorContainer.siblings('.carousel-control').show();
 						}
+
 					}
 				}else {
 					rowTemplateElement.closest('.carousel').html("").append( noData );
@@ -106,12 +109,6 @@ var quizRTData = {
       }
     }// end for
 	} // End constructRowsAndTiles
-
-
-	// To create the bounce effect when a Tile is clicked
-	$('#teams-wrap').on('click', '.tile', function() {
-		$(this).effect( "bounce", {distance:10,times:1},350);
-	} );
 
 	/*...........................................................................
 			Event handlers for Next and Back buttons in createTeamModal window
@@ -177,7 +174,7 @@ var quizRTData = {
 		setTimeout( function() {
 			element.style.display = disp;
 			n.parentNode.removeChild(n);
-		}, 20 );
+		}, 500 );
 	};
 
 })(jQuery);
