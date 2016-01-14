@@ -1,0 +1,24 @@
+extends layout
+block extra-header
+  link(rel='stylesheet', href='/css/people-style.css')
+  script(id='stackTemplate',type='tuts/template')
+    div.col-xs-6.col-sm-3.col-md-2.hofStack
+      div.panel.panel-primary.text-center
+        div.panel-heading
+          h3.panel-title
+            span.pull-left.badge {{rank}}
+            span.pull-right {{name}}
+            span.clearfix
+        div.panel-body
+          img(src="./images/{{img}}").img-responsive
+        div.panel-footer
+          div.row
+            div.col-xs-6.label.label-success {{points}} Points
+            div.col-xs-6.label.label-primary {{games}} Played
+            div.col-xs-6.label.label-warning {{badge}} Badges
+            div.col-xs-6.label.label-success {{win}}% Win
+
+block content
+  div.row#content
+block extra-scripts
+    script(src="js/people-script.js")
