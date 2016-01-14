@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    title=title
+    meta(charset='utf-8')
+    meta(name='viewport',content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/quizrtgame-style.css')
+  body
+    div#main.container-fluid
+      nav.navbar.navbar-fixed-top
+        div.container
+          div.navbar-header
+            button(type='button',data-target='#navbar-responsive-collapse',data-toggle='collapse').navbar-toggle
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            h2 Quiz RT
+          div.collapse.navbar-collapse#navbar-responsive-collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href='/')   Home
+                  span.sr-only (current)
+              li
+                a(href='/people') People
+              li
+                a(href='/teams') Teams
+              li
+                a(href='/tournament') Tournaments
+            ul.nav.navbar-nav.navbar-right
+              li.dropdown
+                a(href='#',data-toggle="dropdown",role="button", aria-haspopup="true",aria-expanded="false").dropdown-toggle
+                  span.glyphicon.glyphicon-user  User
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#')
+                      span.glyphicon.glyphicon-wrench  Settings
+                  li
+                    a(href='#')
+                      span.glyphicon.glyphicon-refresh  Update Profile
+                  li
+                    a(href='#')
+                      span.glyphicon.glyphicon-off  Logout
+    block content
+    script(src="js/jquery-2.1.4.min.js")
+    script(src="js/bootstrap.min.js")
+    script(src="js/quizrtgame-script.js")
