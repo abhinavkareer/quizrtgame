@@ -1,0 +1,54 @@
+extends layout
+block extra-header
+    link(rel='stylesheet', href='/css/tournament-style.css')
+block content
+    div.container#main
+        section.title
+            h2 Tournaments
+            span Participate in tournaments around topics you are passionate about and easily discover new topics that match your interests
+            ol.breadcrum.hidden-xs
+                li
+                    a(href="#") New Tournaments
+                li
+                    a(href="#") Top Tournaments
+                li
+                    a(href="#") Categories
+        section.section-heading
+            h3 My participations
+            hr
+        div.carousel.slide#partofTournammentCarousel(data-ride="carousel")
+            div.carousel-inner
+                script#tournamentTemplate(type="tournamentTemplate")
+                    div.col-xs-4.col-sm-4
+                        div.tournament
+                            div.tournament-details
+                                p {{name}}
+                                span.prize {{prize}}
+                                img.img-responsive.icon-font-game(src="images/icon-font-game.png")
+                div.item.active
+            a.left.carousel-control(href="#partofTournammentCarousel" data-slide="prev")
+                span.icon-prev
+            a.right.carousel-control(href="#partofTournammentCarousel" data-slide="next")
+                span.icon-next
+        section.section-heading
+            h3 My Creations
+            hr
+        div.carousel.slide#createdTournammentsCarousel(data-ride="carousel")
+            div.carousel-inner
+                div.item.active
+            a.left.carousel-control(href="#createdTournammentsCarousel" data-slide="prev")
+                span.icon-prev
+            a.right.carousel-control(href="#createdTournammentsCarousel" data-slide="next")
+                span.icon-next
+        section.section-heading
+            h3 History
+            hr
+        div.carousel.slide#playedTournammentsCarousel(data-ride="carousel")
+            div.carousel-inner
+                div.item.active
+            a.left.carousel-control(href="#playedTournammentsCarousel" data-slide="prev")
+                span.icon-prev
+            a.right.carousel-control(href="#playedTournammentsCarousel" data-slide="next")
+                span.icon-next
+block extra-scripts
+    script(src="js/tournaments-script.js")

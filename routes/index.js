@@ -7,6 +7,19 @@ var router = express.Router();
 router.get('/people', function(req, res, next) {
   res.render('people', { title: 'People|QuizRT Game World' });
 });
+
+/* GET tournament page. */
+router.get('/tournament', function(req, res, next) {
+  res.render('tournament', { title: 'QuizRT Game World' });
+});
+
+/* GET tournament page. */
+router.get('/tournament-json', function(req, res, next) {
+  var tournamentJSON=fs.readFileSync('./public/resources/tournament.json', 'utf8');
+  res.send(tournamentJSON);
+  //res.json(tournamentJSON);
+});
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'QuizRT Game World' });

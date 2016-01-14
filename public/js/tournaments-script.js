@@ -3,8 +3,8 @@
 		template = $.trim($("#tournamentTemplate").html());
 	
 	// ajax call to load json file
-	$.getJSON('resources/tournament.json').done(function(data){
-
+	$.getJSON('/tournament-json').done(function(data){
+		
 		// update partOfTournament Carousel
 		updateCarousel( $("#partofTournammentCarousel"), template, data.tournaments.playing);
 		
